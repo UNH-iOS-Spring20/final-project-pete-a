@@ -15,6 +15,12 @@
 		0F4645B823FB03DA00B765F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4645B623FB03DA00B765F3 /* LaunchScreen.storyboard */; };
 		0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645C223FB03DA00B765F3 /* BoatZapTests.swift */; };
 		0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645CD23FB03DA00B765F3 /* BoatZapUITests.swift */; };
+		0F4645DD23FB8DA400B765F3 /* BoatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645DC23FB8DA400B765F3 /* BoatItem.swift */; };
+		0F4645DE23FB8DA400B765F3 /* BoatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645DC23FB8DA400B765F3 /* BoatItem.swift */; };
+		0F4645DF23FB8DA400B765F3 /* BoatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645DC23FB8DA400B765F3 /* BoatItem.swift */; };
+		0F4645E123FB95EE00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E023FB95EE00B765F3 /* BoatListings.swift */; };
+		0F4645E223FB95EE00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E023FB95EE00B765F3 /* BoatListings.swift */; };
+		0F4645E323FB95EE00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E023FB95EE00B765F3 /* BoatListings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,8 @@
 		0F4645C923FB03DA00B765F3 /* BoatZapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoatZapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4645CD23FB03DA00B765F3 /* BoatZapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatZapUITests.swift; sourceTree = "<group>"; };
 		0F4645CF23FB03DA00B765F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4645DC23FB8DA400B765F3 /* BoatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatItem.swift; sourceTree = "<group>"; };
+		0F4645E023FB95EE00B765F3 /* BoatListings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatListings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		0F4645AA23FB03D900B765F3 /* BoatZap */ = {
 			isa = PBXGroup;
 			children = (
+				0F4645DB23FB8C9D00B765F3 /* Model */,
 				0F4645AB23FB03D900B765F3 /* AppDelegate.swift */,
 				0F4645AD23FB03D900B765F3 /* SceneDelegate.swift */,
 				0F4645AF23FB03D900B765F3 /* ContentView.swift */,
@@ -134,6 +143,15 @@
 				0F4645CF23FB03DA00B765F3 /* Info.plist */,
 			);
 			path = BoatZapUITests;
+			sourceTree = "<group>";
+		};
+		0F4645DB23FB8C9D00B765F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F4645DC23FB8DA400B765F3 /* BoatItem.swift */,
+				0F4645E023FB95EE00B765F3 /* BoatListings.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +287,8 @@
 			files = (
 				0F4645AC23FB03D900B765F3 /* AppDelegate.swift in Sources */,
 				0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */,
+				0F4645DD23FB8DA400B765F3 /* BoatItem.swift in Sources */,
+				0F4645E123FB95EE00B765F3 /* BoatListings.swift in Sources */,
 				0F4645B023FB03D900B765F3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4645DE23FB8DA400B765F3 /* BoatItem.swift in Sources */,
+				0F4645E223FB95EE00B765F3 /* BoatListings.swift in Sources */,
 				0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4645DF23FB8DA400B765F3 /* BoatItem.swift in Sources */,
+				0F4645E323FB95EE00B765F3 /* BoatListings.swift in Sources */,
 				0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
