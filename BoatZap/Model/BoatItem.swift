@@ -22,7 +22,6 @@ class BoatItem {
         make: String,
         length: Double,
         currentPrice: Double
-        
     ) {
         
         if name.isEmpty {
