@@ -54,5 +54,4 @@ class BoatItem {
             return difference
         }
     }
-    
 }

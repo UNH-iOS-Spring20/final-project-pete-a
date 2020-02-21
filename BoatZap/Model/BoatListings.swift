@@ -14,6 +14,4 @@ class BoatListings {
     func addBoat(item: BoatItem) {
        boats.append(item)
     }
-       
-    
 }

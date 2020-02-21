@@ -21,6 +21,12 @@
 		0F4645E523FE3B5F00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E423FE3B5F00B765F3 /* BoatListings.swift */; };
 		0F4645E623FE3B5F00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E423FE3B5F00B765F3 /* BoatListings.swift */; };
 		0F4645E723FE3B5F00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E423FE3B5F00B765F3 /* BoatListings.swift */; };
+		0FD1842923FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
+		0FD1842A23FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
+		0FD1842B23FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
+		50928AE088299B3D11E8FB1E /* Pods_BoatZap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA14F930EEDB6B450B8822C /* Pods_BoatZap.framework */; };
+		62E2989FF3D5100C1AFC3F09 /* Pods_BoatZapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59201887F8DDADD45B71879 /* Pods_BoatZapTests.framework */; };
+		F497F04D45ED6DA4221FBB01 /* Pods_BoatZap_BoatZapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF2E27727D407F3EC01C298 /* Pods_BoatZap_BoatZapUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AF2E27727D407F3EC01C298 /* Pods_BoatZap_BoatZapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoatZap_BoatZapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4645A823FB03D900B765F3 /* BoatZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoatZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4645AB23FB03D900B765F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F4645AD23FB03D900B765F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +64,15 @@
 		0F4645CF23FB03DA00B765F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4645DC23FB8DA400B765F3 /* BoatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatItem.swift; sourceTree = "<group>"; };
 		0F4645E423FE3B5F00B765F3 /* BoatListings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatListings.swift; sourceTree = "<group>"; };
+		0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17980801E2FF72572297A204 /* Pods-BoatZap-BoatZapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap-BoatZapUITests.release.xcconfig"; path = "Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F2675DCA03BDDB57B811BEC /* Pods-BoatZap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap.release.xcconfig"; path = "Target Support Files/Pods-BoatZap/Pods-BoatZap.release.xcconfig"; sourceTree = "<group>"; };
+		656EA0502D08D9D62ECFFF12 /* Pods-BoatZap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap.debug.xcconfig"; path = "Target Support Files/Pods-BoatZap/Pods-BoatZap.debug.xcconfig"; sourceTree = "<group>"; };
+		92AD261117A526C23ACCF669 /* Pods-BoatZapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZapTests.release.xcconfig"; path = "Target Support Files/Pods-BoatZapTests/Pods-BoatZapTests.release.xcconfig"; sourceTree = "<group>"; };
+		B760EA8B8DE5173FF87C3463 /* Pods-BoatZapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZapTests.debug.xcconfig"; path = "Target Support Files/Pods-BoatZapTests/Pods-BoatZapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA14F930EEDB6B450B8822C /* Pods_BoatZap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoatZap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01832D66B0A3CB30FDBA374 /* Pods-BoatZap-BoatZapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap-BoatZapUITests.debug.xcconfig"; path = "Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D59201887F8DDADD45B71879 /* Pods_BoatZapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoatZapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50928AE088299B3D11E8FB1E /* Pods_BoatZap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E2989FF3D5100C1AFC3F09 /* Pods_BoatZapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F497F04D45ED6DA4221FBB01 /* Pods_BoatZap_BoatZapUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,10 +106,13 @@
 		0F46459F23FB03D900B765F3 = {
 			isa = PBXGroup;
 			children = (
+				0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */,
 				0F4645AA23FB03D900B765F3 /* BoatZap */,
 				0F4645C123FB03DA00B765F3 /* BoatZapTests */,
 				0F4645CC23FB03DA00B765F3 /* BoatZapUITests */,
 				0F4645A923FB03D900B765F3 /* Products */,
+				8475A641464CBB7CEDA3BAD8 /* Pods */,
+				52EBE38689442CBF4E07C33A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +176,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		52EBE38689442CBF4E07C33A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCA14F930EEDB6B450B8822C /* Pods_BoatZap.framework */,
+				0AF2E27727D407F3EC01C298 /* Pods_BoatZap_BoatZapUITests.framework */,
+				D59201887F8DDADD45B71879 /* Pods_BoatZapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8475A641464CBB7CEDA3BAD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				656EA0502D08D9D62ECFFF12 /* Pods-BoatZap.debug.xcconfig */,
+				3F2675DCA03BDDB57B811BEC /* Pods-BoatZap.release.xcconfig */,
+				C01832D66B0A3CB30FDBA374 /* Pods-BoatZap-BoatZapUITests.debug.xcconfig */,
+				17980801E2FF72572297A204 /* Pods-BoatZap-BoatZapUITests.release.xcconfig */,
+				B760EA8B8DE5173FF87C3463 /* Pods-BoatZapTests.debug.xcconfig */,
+				92AD261117A526C23ACCF669 /* Pods-BoatZapTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F4645D223FB03DA00B765F3 /* Build configuration list for PBXNativeTarget "BoatZap" */;
 			buildPhases = (
+				32134E28E524641A074BB94E /* [CP] Check Pods Manifest.lock */,
 				0F4645A423FB03D900B765F3 /* Sources */,
 				0F4645A523FB03D900B765F3 /* Frameworks */,
 				0F4645A623FB03D900B765F3 /* Resources */,
+				77CA9F3CA7F84118AEA84A08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F4645D523FB03DA00B765F3 /* Build configuration list for PBXNativeTarget "BoatZapTests" */;
 			buildPhases = (
+				945B62B2806462DB001124A7 /* [CP] Check Pods Manifest.lock */,
 				0F4645BA23FB03DA00B765F3 /* Sources */,
 				0F4645BB23FB03DA00B765F3 /* Frameworks */,
 				0F4645BC23FB03DA00B765F3 /* Resources */,
@@ -196,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F4645D823FB03DA00B765F3 /* Build configuration list for PBXNativeTarget "BoatZapUITests" */;
 			buildPhases = (
+				D5C15E58163E9B09E73E9D2F /* [CP] Check Pods Manifest.lock */,
 				0F4645C523FB03DA00B765F3 /* Sources */,
 				0F4645C623FB03DA00B765F3 /* Frameworks */,
 				0F4645C723FB03DA00B765F3 /* Resources */,
+				B1A00A31E664AFE768D26765 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4645B823FB03DA00B765F3 /* LaunchScreen.storyboard in Resources */,
+				0FD1842923FF6548008A0F5A /* GoogleService-Info.plist in Resources */,
 				0F4645B523FB03DA00B765F3 /* Preview Assets.xcassets in Resources */,
 				0F4645B223FB03DA00B765F3 /* Assets.xcassets in Resources */,
 			);
@@ -268,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD1842A23FF6548008A0F5A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +328,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD1842B23FF6548008A0F5A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32134E28E524641A074BB94E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoatZap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77CA9F3CA7F84118AEA84A08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoatZap/Pods-BoatZap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoatZap/Pods-BoatZap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoatZap/Pods-BoatZap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		945B62B2806462DB001124A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoatZapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1A00A31E664AFE768D26765 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C15E58163E9B09E73E9D2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoatZap-BoatZapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F4645A423FB03D900B765F3 /* Sources */ = {
@@ -456,6 +613,7 @@
 		};
 		0F4645D323FB03DA00B765F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656EA0502D08D9D62ECFFF12 /* Pods-BoatZap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +634,7 @@
 		};
 		0F4645D423FB03DA00B765F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2675DCA03BDDB57B811BEC /* Pods-BoatZap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +655,7 @@
 		};
 		0F4645D623FB03DA00B765F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B760EA8B8DE5173FF87C3463 /* Pods-BoatZapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +678,7 @@
 		};
 		0F4645D723FB03DA00B765F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AD261117A526C23ACCF669 /* Pods-BoatZapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +701,7 @@
 		};
 		0F4645D923FB03DA00B765F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C01832D66B0A3CB30FDBA374 /* Pods-BoatZap-BoatZapUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +722,7 @@
 		};
 		0F4645DA23FB03DA00B765F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17980801E2FF72572297A204 /* Pods-BoatZap-BoatZapUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
