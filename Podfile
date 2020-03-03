@@ -12,6 +12,20 @@ target 'BoatZap' do
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
   pod 'Firebase/Core'
+  #pod 'FirebaseUI'
+  
+  #pod 'GoogleSignIn'
+  #pod 'FirebaseUI/Auth'
+
+  #pod 'FirebaseUI/Google'
+  #pod 'FirebaseUI/Facebook'
+  #pod 'FirebaseUI/OAuth' # Used for Sign in with Apple, Twitter, etc
+  #pod 'FirebaseUI/Phone'
+  
+  
+  #pod 'FBSDKCoreKit/Swift'
+  #pod 'FBSDKLoginKit/Swift'
+  #pod 'FBSDKShareKit/Swift'
 
   target 'BoatZapTests' do
     inherit! :search_paths

@@ -8,7 +8,7 @@
 
 import SwiftUI
 import FirebaseFirestore
-//import Firebase
+import Firebase
 
 let db = Firestore.firestore()
 
@@ -43,16 +43,24 @@ struct UserInfoView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Text("Password :")
                     .font(.headline)
-                TextField("Password", text: $password)
+                SecureField("Password", text: $password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Text("Retype Password :")
                     .font(.headline)
-                TextField("Password", text: $passwordVer)
+                SecureField("Password", text: $passwordVer)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .padding(.horizontal, 10)
             Section {
-                Button(action: {}) {
+                Button(action: {
+                    Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
+                    }
+                    // WORKING ON NAV HERE    
+//                NavigationLink(destination: ContentView()){
+//                        Text("something")
+//                    }
+                   
+                }) {
                 Text("Save")
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
@@ -60,10 +68,13 @@ struct UserInfoView: View {
                     .background(Color.blue)
                     .cornerRadius(15)
                 }
+                
             }
         }
     }
 }
+
+
 
 
 private func createUser() {
