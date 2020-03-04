@@ -24,6 +24,15 @@
 		0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
 		0F7A9DE5240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
 		0F7A9DE6240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
+		0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
+		0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
+		0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
+		0FBFE427240F58B50071C70D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
+		0FBFE428240F58B50071C70D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
+		0FBFE429240F58B50071C70D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
+		0FBFE42B240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
+		0FBFE42C240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
+		0FBFE42D240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
 		0FD1842923FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
 		0FD1842A23FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
 		0FD1842B23FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
@@ -68,6 +77,9 @@
 		0F4645DC23FB8DA400B765F3 /* BoatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatItem.swift; sourceTree = "<group>"; };
 		0F4645E423FE3B5F00B765F3 /* BoatListings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatListings.swift; sourceTree = "<group>"; };
 		0F7A9DE3240B763C00D921BB /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		0FBFE422240F585D0071C70D /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		0FBFE426240F58B50071C70D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0FBFE42A240F5A780071C70D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		17980801E2FF72572297A204 /* Pods-BoatZap-BoatZapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap-BoatZapUITests.release.xcconfig"; path = "Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3F2675DCA03BDDB57B811BEC /* Pods-BoatZap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap.release.xcconfig"; path = "Target Support Files/Pods-BoatZap/Pods-BoatZap.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +154,8 @@
 				0F4645B923FB03DA00B765F3 /* Info.plist */,
 				0F4645B323FB03DA00B765F3 /* Preview Content */,
 				0F7A9DE3240B763C00D921BB /* UserInfoView.swift */,
+				0FBFE422240F585D0071C70D /* ProfileHost.swift */,
+				0FBFE426240F58B50071C70D /* HomeView.swift */,
 			);
 			path = BoatZap;
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 			children = (
 				0F4645DC23FB8DA400B765F3 /* BoatItem.swift */,
 				0F4645E423FE3B5F00B765F3 /* BoatListings.swift */,
+				0FBFE42A240F5A780071C70D /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,9 +463,12 @@
 			files = (
 				0F4645AC23FB03D900B765F3 /* AppDelegate.swift in Sources */,
 				0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */,
+				0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */,
 				0F4645DD23FB8DA400B765F3 /* BoatItem.swift in Sources */,
+				0FBFE427240F58B50071C70D /* HomeView.swift in Sources */,
 				0F4645E523FE3B5F00B765F3 /* BoatListings.swift in Sources */,
+				0FBFE42B240F5A780071C70D /* Profile.swift in Sources */,
 				0F4645B023FB03D900B765F3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +480,9 @@
 				0F7A9DE5240B763C00D921BB /* UserInfoView.swift in Sources */,
 				0F4645DE23FB8DA400B765F3 /* BoatItem.swift in Sources */,
 				0F4645E623FE3B5F00B765F3 /* BoatListings.swift in Sources */,
+				0FBFE42C240F5A780071C70D /* Profile.swift in Sources */,
+				0FBFE428240F58B50071C70D /* HomeView.swift in Sources */,
+				0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +494,9 @@
 				0F7A9DE6240B763C00D921BB /* UserInfoView.swift in Sources */,
 				0F4645DF23FB8DA400B765F3 /* BoatItem.swift in Sources */,
 				0F4645E723FE3B5F00B765F3 /* BoatListings.swift in Sources */,
+				0FBFE42D240F5A780071C70D /* Profile.swift in Sources */,
+				0FBFE429240F58B50071C70D /* HomeView.swift in Sources */,
+				0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

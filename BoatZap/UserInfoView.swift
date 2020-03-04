@@ -22,6 +22,7 @@ struct UserInfoView: View {
     
     
     var body: some View {
+        
         Form  {
             Section {
                 Text("New User Sign up")
@@ -50,32 +51,72 @@ struct UserInfoView: View {
                 SecureField("Password", text: $passwordVer)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
-            .padding(.horizontal, 10)
-            Section {
+            .padding(.horizontal, 5)
+           // Section {
                 Button(action: {
+                    //addUser(firstName: self.firstName, lastName: self.lastName, email: self.email, password: self.password)
                     Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
-                    }
-                    // WORKING ON NAV HERE    
-//                NavigationLink(destination: ContentView()){
-//                        Text("something")
-//                    }
-                   
+                   }
+ 
                 }) {
                 Text("Save")
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
-                    .padding(20)
+                    .padding(15)
                     .background(Color.blue)
                     .cornerRadius(15)
                 }
                 
+           // }
+            Button(action: {
+                 createUser()
+            }) {
+                Text("Create Test Users")
+                   .foregroundColor(Color.black)
+                   .multilineTextAlignment(.center)
+                   .padding(5)
+                   .background(Color.blue)
+                   .cornerRadius(15)
+            }
+        
+            Button(action: {
+                deleteCollection(collection: "users")
+            }) {
+                Text("Remove Test Users")
+                   .foregroundColor(Color.black)
+                   .multilineTextAlignment(.center)
+                   .padding(5)
+                   .background(Color.blue)
+                   .cornerRadius(15)
+            }
+            
+            Button(action: {
+                getCollection(collection: "users")
+            }) {
+                Text("Get Test users")
+                   .foregroundColor(Color.black)
+                   .multilineTextAlignment(.center)
+                   .padding(5)
+                   .background(Color.blue)
+                   .cornerRadius(15)
+            }
+            NavigationLink(destination: ContentView()) {
+                Text("Home")
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(5)
+                    .background(Color.blue)
+                    .cornerRadius(15)
             }
         }
     }
 }
 
-
-
+func addUser(firstName: String, lastName :String, email :String, password :String ) {
+    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+    }
+  //  ContentView()
+}
 
 private func createUser() {
     let UserRef = db.collection("users")
@@ -87,7 +128,6 @@ private func createUser() {
         "confirmEmail": "pauri1@gmail.com",
         "buyer" : true,
         "seller" : true
-        
     ])
     
     UserRef.document().setData([
@@ -97,7 +137,6 @@ private func createUser() {
         "confirmEmail": "jmoler@gmail.com",
         "buyer" : true,
         "seller" : false
-        
     ])
 
     UserRef.document().setData([
@@ -107,9 +146,51 @@ private func createUser() {
         "confirmEmail": "mhall23@gmail.com",
         "buyer" : false,
         "seller" : true
-        
     ])
 }
+// --- not sure how to do this with auto generated ref???
+//private func updateUser() {
+//    let userRef = db.collection("users")
+//
+//    userRef.document("Vetrano's").setData([
+//        "name": "Vetrano's",
+//        "city": "Charlestown",
+//        "state": "RI"
+//    ])
+//
+//    userRef.document("Midway Pizza").setData([
+//        "name": "New Midway Pizza",
+//        "city": "New London",
+//        "state": "CT"
+//    ])
+//}
+
+private func deleteCollection(collection: String) {
+    db.collection(collection).getDocuments() { (querySnapshot, err) in
+        if let err = err {
+            print("Error getting documents: \(err)")
+            return
+        }
+
+        for document in querySnapshot!.documents {
+            print("Deleting \(document.documentID) => \(document.data())")
+            document.reference.delete()
+        }
+    }
+}
+
+private func getCollection(collection: String) {
+    db.collection(collection).getDocuments() { (querySnapshot, err) in
+        if let err = err {
+            print("Error getting documents: \(err)")
+        } else {
+            for document in querySnapshot!.documents {
+                print("\(document.documentID) => \(document.data())")
+            }
+        }
+    }
+}
+
 
 struct USerInfoView_Previews: PreviewProvider {
     static var previews: some View {
