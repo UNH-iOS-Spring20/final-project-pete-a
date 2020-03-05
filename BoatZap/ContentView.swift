@@ -15,9 +15,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Hello World")
+                Text("BoatZap Navagator")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.blue)
                 NavigationLink(destination: UserInfoView()) {
                     Text("New Users View")
+                }
+                NavigationLink(destination: SellerHomeView()) {
+                    Text("Seller Home View")
+                }
+                NavigationLink(destination: BuyerHomeView()) {
+                    Text("Buyer Home View")
                 }
             }
         }
