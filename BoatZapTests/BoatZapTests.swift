@@ -56,6 +56,7 @@ class BoatZapTests: XCTestCase {
         XCTAssertEqual(1, boatList.boats.count)
         boatList.addBoat(item: twoBoatItem!)
         XCTAssertEqual(2, boatList.boats.count)
+        //XCTAsser
     }
 
     func testExample() {

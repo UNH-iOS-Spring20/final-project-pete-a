@@ -23,12 +23,11 @@ struct UserInfoView: View {
     
     var body: some View {
         
-        Form  {
-            Section {
-                Text("New User Sign up")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.blue)
-            }
+        Form {
+            Text("New User Sign up")
+                .font(.largeTitle)
+                .foregroundColor(Color.blue)
+
             VStack(alignment: .leading) {
                 Text("First Name :")
                     .font(.headline)
@@ -51,63 +50,63 @@ struct UserInfoView: View {
                 SecureField("Password", text: $passwordVer)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
-            .padding(.horizontal, 5)
-           // Section {
-                Button(action: {
-                    //addUser(firstName: self.firstName, lastName: self.lastName, email: self.email, password: self.password)
-                    Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
-                   }
+                .padding(.horizontal, 5)
+            Button(action: {
+                //addUser(firstName: self.firstName, lastName: self.lastName, email: self.email, password: self.password)
+                Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
+                }
  
                 }) {
                 Text("Save")
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(15)
-                    .background(Color.blue)
-                    .cornerRadius(15)
-                }
+            }
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+                .padding(15)
+                .background(Color.blue)
+                .cornerRadius(15)
                 
-           // }
             Button(action: {
-                 createUser()
+                createUser()
             }) {
                 Text("Create Test Users")
-                   .foregroundColor(Color.black)
-                   .multilineTextAlignment(.center)
-                   .padding(5)
-                   .background(Color.blue)
-                   .cornerRadius(15)
             }
-        
+               .foregroundColor(Color.black)
+               .multilineTextAlignment(.center)
+               .padding(5)
+               .background(Color.blue)
+               .cornerRadius(15)
+            
             Button(action: {
                 deleteCollection(collection: "users")
             }) {
                 Text("Remove Test Users")
+            }
                    .foregroundColor(Color.black)
                    .multilineTextAlignment(.center)
                    .padding(5)
                    .background(Color.blue)
                    .cornerRadius(15)
-            }
             
             Button(action: {
                 getCollection(collection: "users")
             }) {
                 Text("Get Test users")
+            }
                    .foregroundColor(Color.black)
                    .multilineTextAlignment(.center)
                    .padding(5)
                    .background(Color.blue)
                    .cornerRadius(15)
-            }
-            NavigationLink(destination: ContentView()) {
+            
+            NavigationLink(destination: HomeView()) {
                 Text("Home")
+            }
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
                     .padding(5)
                     .background(Color.blue)
                     .cornerRadius(15)
-            }
+            
         }
     }
 }
