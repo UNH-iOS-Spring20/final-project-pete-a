@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0A214F241F0B8600F608C5 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A214E241F0B8600F608C5 /* DebugView.swift */; };
+		0F0A2151241F1E9800F608C5 /* Boats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A2150241F1E9800F608C5 /* Boats.swift */; };
 		0F4645AC23FB03D900B765F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AB23FB03D900B765F3 /* AppDelegate.swift */; };
 		0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AD23FB03D900B765F3 /* SceneDelegate.swift */; };
 		0F4645B023FB03D900B765F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AF23FB03D900B765F3 /* ContentView.swift */; };
@@ -67,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		0AF2E27727D407F3EC01C298 /* Pods_BoatZap_BoatZapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoatZap_BoatZapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0A214E241F0B8600F608C5 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		0F0A2150241F1E9800F608C5 /* Boats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boats.swift; sourceTree = "<group>"; };
 		0F4645A823FB03D900B765F3 /* BoatZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoatZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4645AB23FB03D900B765F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F4645AD23FB03D900B765F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,10 +202,10 @@
 		0F4645DB23FB8C9D00B765F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0F7A9DE3240B763C00D921BB /* UserInfoView.swift */,
 				0F4645DC23FB8DA400B765F3 /* BoatItem.swift */,
 				0F4645E423FE3B5F00B765F3 /* BoatListings.swift */,
 				0FBFE42A240F5A780071C70D /* Profile.swift */,
+				0F0A2150241F1E9800F608C5 /* Boats.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,10 +213,12 @@
 		0FB056CB241DD11800161E2F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0F7A9DE3240B763C00D921BB /* UserInfoView.swift */,
 				0F4645AF23FB03D900B765F3 /* ContentView.swift */,
 				0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */,
 				0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */,
 				0FBFE426240F58B50071C70D /* HomeView.swift */,
+				0F0A214E241F0B8600F608C5 /* DebugView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -500,8 +506,10 @@
 				0FBFE42B240F5A780071C70D /* Profile.swift in Sources */,
 				0FBFE4332410A6F40071C70D /* BuyerHomeView.swift in Sources */,
 				0FB056CE241DD41E00161E2F /* FirebaseSession.swift in Sources */,
+				0F0A214F241F0B8600F608C5 /* DebugView.swift in Sources */,
 				0FBFE42F2410A1DA0071C70D /* SellerHomeView.swift in Sources */,
 				0F4645B023FB03D900B765F3 /* ContentView.swift in Sources */,
+				0F0A2151241F1E9800F608C5 /* Boats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

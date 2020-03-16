@@ -6,9 +6,13 @@
 //  Copyright © 2020 Peter Aurigemma. All rights reserved.
 //
 
+//Currently not USED
+
 import UIKit
+import FirebaseFirestore
 
 class BoatItem {
+    //var id: String
     var name: String
     let boatTypes = ["Power", "Sail"] //need to clean up boat types
     var type : String
@@ -17,7 +21,8 @@ class BoatItem {
     var currentPrice: Double
     var startingPrice: Double? = 0.0
     
-    init?(name: String,
+    init?(//id: String,
+        name: String,
         type: String,
         make: String,
         length: Double,
