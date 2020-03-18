@@ -18,7 +18,7 @@ struct BuyerHomeView: View {
                 }
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
-                    .padding(10)
+                .padding(100)
                     .background(Color.blue)
                     .cornerRadius(15)
 

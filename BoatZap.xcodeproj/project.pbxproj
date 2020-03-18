@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F0A214F241F0B8600F608C5 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A214E241F0B8600F608C5 /* DebugView.swift */; };
 		0F0A2151241F1E9800F608C5 /* Boats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A2150241F1E9800F608C5 /* Boats.swift */; };
+		0F0A2153241F2C9F00F608C5 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A2152241F2C9F00F608C5 /* CreditView.swift */; };
 		0F4645AC23FB03D900B765F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AB23FB03D900B765F3 /* AppDelegate.swift */; };
 		0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AD23FB03D900B765F3 /* SceneDelegate.swift */; };
 		0F4645B023FB03D900B765F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AF23FB03D900B765F3 /* ContentView.swift */; };
@@ -71,6 +72,7 @@
 		0AF2E27727D407F3EC01C298 /* Pods_BoatZap_BoatZapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoatZap_BoatZapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0A214E241F0B8600F608C5 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		0F0A2150241F1E9800F608C5 /* Boats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boats.swift; sourceTree = "<group>"; };
+		0F0A2152241F2C9F00F608C5 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
 		0F4645A823FB03D900B765F3 /* BoatZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoatZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4645AB23FB03D900B765F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F4645AD23FB03D900B765F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */,
 				0FBFE426240F58B50071C70D /* HomeView.swift */,
 				0F0A214E241F0B8600F608C5 /* DebugView.swift */,
+				0F0A2152241F2C9F00F608C5 /* CreditView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */,
 				0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */,
+				0F0A2153241F2C9F00F608C5 /* CreditView.swift in Sources */,
 				0F4645DD23FB8DA400B765F3 /* BoatItem.swift in Sources */,
 				0FBFE427240F58B50071C70D /* HomeView.swift in Sources */,
 				0F4645E523FE3B5F00B765F3 /* BoatListings.swift in Sources */,

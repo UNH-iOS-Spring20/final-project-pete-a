@@ -25,22 +25,25 @@ struct ContentView: View {
                 NavigationLink(destination: BuyerHomeView()) {
                     Text("Buyer Home View")
                 }
-            }
-        }
-            .onAppear() {
-        let db = Firestore.firestore()
-        db.collection("users").getDocuments() {
-            (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-
-                }else {
-                    for document in querySnapshot!.documents {
-                        print("\(document.documentID) => \(document.data())")
-                    }
+                NavigationLink(destination: CreditView()) {
+                    Text("Credits")
                 }
             }
         }
+//            .onAppear() {
+//        let db = Firestore.firestore()
+//        db.collection("users").getDocuments() {
+//            (querySnapshot, err) in
+//                if let err = err {
+//                    print("Error getting documents: \(err)")
+//
+//                }else {
+//                    for document in querySnapshot!.documents {
+//                        print("\(document.documentID) => \(document.data())")
+//                    }
+//                }
+//            }
+//        }
     }
 }
 
