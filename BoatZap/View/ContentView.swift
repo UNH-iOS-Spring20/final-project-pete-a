@@ -25,6 +25,9 @@ struct ContentView: View {
                 NavigationLink(destination: BuyerHomeView()) {
                     Text("Buyer Home View")
                 }
+                NavigationLink(destination: ListBoatView()) {
+                    Text("List Boat")
+                }
                 NavigationLink(destination: CreditView()) {
                     Text("Credits")
                 }

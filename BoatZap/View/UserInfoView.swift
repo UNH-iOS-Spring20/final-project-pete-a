@@ -50,14 +50,14 @@ struct UserInfoView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
                 .padding(.horizontal, 5)
-            Button(action: {
-                //addUser(firstName: self.firstName, lastName: self.lastName, email: self.email, password: self.password)
-                Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
-                }
- 
-                }) {
-                Text("Save")
-            }
+//            Button(action: {
+//                //addUser(firstName: self.firstName, lastName: self.lastName, email: self.email, password: self.password)
+//                Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
+//                }
+// 
+//                }) {
+//                Text("Save")
+//            }
                 .foregroundColor(Color.black)
                 .multilineTextAlignment(.center)
                 .padding(15)

@@ -8,13 +8,14 @@
 
 import FirebaseFirestore
 
-struct Boats: Identifiable {
+struct Boat: Identifiable {
+    
     var id: String
     var name: String
     var type: String
     var make: String
-    var length: Double
-    var price: Double
+    var length: String
+    var price: String
     var address: String
-    var location: GeoPoint
+   // var location: GeoPoint
 }

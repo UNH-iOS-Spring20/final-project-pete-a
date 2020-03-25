@@ -6,12 +6,12 @@ target 'BoatZap' do
   use_frameworks!
 
   # Pods for BoatZap
-  pod 'Firebase'
+  #pod 'Firebase'
   pod 'Firebase/Auth'
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Database'
+  #pod 'Firebase/Analytics'
+  #pod 'Firebase/Database'
   pod 'Firebase/Firestore'
-  pod 'Firebase/Core'
+  #pod 'Firebase/Core'
   #pod 'FirebaseUI'
   
   #pod 'GoogleSignIn'
