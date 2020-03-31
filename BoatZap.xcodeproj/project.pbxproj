@@ -25,6 +25,15 @@
 		0F4645E523FE3B5F00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E423FE3B5F00B765F3 /* BoatListings.swift */; };
 		0F4645E623FE3B5F00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E423FE3B5F00B765F3 /* BoatListings.swift */; };
 		0F4645E723FE3B5F00B765F3 /* BoatListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645E423FE3B5F00B765F3 /* BoatListings.swift */; };
+		0F718510242C641600A077C9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71850F242C641600A077C9 /* SignInView.swift */; };
+		0F718512242C6EFD00A077C9 /* BoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* BoatLocationView.swift */; };
+		0F718513242C6EFD00A077C9 /* BoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* BoatLocationView.swift */; };
+		0F718514242C6EFD00A077C9 /* BoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* BoatLocationView.swift */; };
+		0F7185162431A56200A077C9 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185152431A56200A077C9 /* FirebaseCollection.swift */; };
+		0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185152431A56200A077C9 /* FirebaseCollection.swift */; };
+		0F7185192432E96700A077C9 /* AddBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185182432E96700A077C9 /* AddBoatView.swift */; };
+		0F71851A2432E96700A077C9 /* AddBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185182432E96700A077C9 /* AddBoatView.swift */; };
+		0F71851B2432E96700A077C9 /* AddBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185182432E96700A077C9 /* AddBoatView.swift */; };
 		0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
 		0F7A9DE5240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
 		0F7A9DE6240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
@@ -91,6 +100,10 @@
 		0F4645CF23FB03DA00B765F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4645DC23FB8DA400B765F3 /* BoatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatItem.swift; sourceTree = "<group>"; };
 		0F4645E423FE3B5F00B765F3 /* BoatListings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatListings.swift; sourceTree = "<group>"; };
+		0F71850F242C641600A077C9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0F718511242C6EFD00A077C9 /* BoatLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatLocationView.swift; sourceTree = "<group>"; };
+		0F7185152431A56200A077C9 /* FirebaseCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollection.swift; sourceTree = "<group>"; };
+		0F7185182432E96700A077C9 /* AddBoatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoatView.swift; sourceTree = "<group>"; };
 		0F7A9DE3240B763C00D921BB /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		0FB056CD241DD41E00161E2F /* FirebaseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSession.swift; sourceTree = "<group>"; };
 		0FBFE422240F585D0071C70D /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
@@ -225,6 +238,9 @@
 				0F0A214E241F0B8600F608C5 /* DebugView.swift */,
 				0F0A2152241F2C9F00F608C5 /* CreditView.swift */,
 				0F3E86F624283FD500658CCA /* ListBoatView.swift */,
+				0F71850F242C641600A077C9 /* SignInView.swift */,
+				0F718511242C6EFD00A077C9 /* BoatLocationView.swift */,
+				0F7185182432E96700A077C9 /* AddBoatView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				0FB056CD241DD41E00161E2F /* FirebaseSession.swift */,
+				0F7185152431A56200A077C9 /* FirebaseCollection.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +289,7 @@
 				0F4645A523FB03D900B765F3 /* Frameworks */,
 				0F4645A623FB03D900B765F3 /* Resources */,
 				77CA9F3CA7F84118AEA84A08 /* [CP] Embed Pods Frameworks */,
+				2F57F4A2BFEF3BAEB1EB4AEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +328,7 @@
 				0F4645C623FB03DA00B765F3 /* Frameworks */,
 				0F4645C723FB03DA00B765F3 /* Resources */,
 				B1A00A31E664AFE768D26765 /* [CP] Embed Pods Frameworks */,
+				980B21AB08FFE98EF3652533 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,6 +414,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F57F4A2BFEF3BAEB1EB4AEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoatZap/Pods-BoatZap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoatZap/Pods-BoatZap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoatZap/Pods-BoatZap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		32134E28E524641A074BB94E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,6 +492,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		980B21AB08FFE98EF3652533 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B1A00A31E664AFE768D26765 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,15 +557,19 @@
 			files = (
 				0F4645AC23FB03D900B765F3 /* AppDelegate.swift in Sources */,
 				0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */,
+				0F718512242C6EFD00A077C9 /* BoatLocationView.swift in Sources */,
 				0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */,
+				0F7185162431A56200A077C9 /* FirebaseCollection.swift in Sources */,
 				0F0A2153241F2C9F00F608C5 /* CreditView.swift in Sources */,
 				0F4645DD23FB8DA400B765F3 /* BoatItem.swift in Sources */,
+				0F718510242C641600A077C9 /* SignInView.swift in Sources */,
 				0FBFE427240F58B50071C70D /* HomeView.swift in Sources */,
 				0F4645E523FE3B5F00B765F3 /* BoatListings.swift in Sources */,
 				0FBFE42B240F5A780071C70D /* Profile.swift in Sources */,
 				0FBFE4332410A6F40071C70D /* BuyerHomeView.swift in Sources */,
 				0F3E86F724283FD500658CCA /* ListBoatView.swift in Sources */,
+				0F7185192432E96700A077C9 /* AddBoatView.swift in Sources */,
 				0FB056CE241DD41E00161E2F /* FirebaseSession.swift in Sources */,
 				0F0A214F241F0B8600F608C5 /* DebugView.swift in Sources */,
 				0FBFE42F2410A1DA0071C70D /* SellerHomeView.swift in Sources */,
@@ -529,10 +586,13 @@
 				0F4645DE23FB8DA400B765F3 /* BoatItem.swift in Sources */,
 				0FBFE4302410A1DA0071C70D /* SellerHomeView.swift in Sources */,
 				0F4645E623FE3B5F00B765F3 /* BoatListings.swift in Sources */,
+				0F718513242C6EFD00A077C9 /* BoatLocationView.swift in Sources */,
+				0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */,
 				0FBFE42C240F5A780071C70D /* Profile.swift in Sources */,
 				0FBFE428240F58B50071C70D /* HomeView.swift in Sources */,
 				0FBFE4342410A6F40071C70D /* BuyerHomeView.swift in Sources */,
 				0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */,
+				0F71851A2432E96700A077C9 /* AddBoatView.swift in Sources */,
 				0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,11 +605,13 @@
 				0F4645DF23FB8DA400B765F3 /* BoatItem.swift in Sources */,
 				0FBFE4312410A1DA0071C70D /* SellerHomeView.swift in Sources */,
 				0F4645E723FE3B5F00B765F3 /* BoatListings.swift in Sources */,
+				0F718514242C6EFD00A077C9 /* BoatLocationView.swift in Sources */,
 				0FBFE42D240F5A780071C70D /* Profile.swift in Sources */,
 				0FBFE429240F58B50071C70D /* HomeView.swift in Sources */,
 				0FBFE4352410A6F40071C70D /* BuyerHomeView.swift in Sources */,
 				0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */,
+				0F71851B2432E96700A077C9 /* AddBoatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
