@@ -33,11 +33,11 @@ class Boat : FirebaseCodable {
     var data: [String: Any] {
         return [
             "name": name,
-            "city": type,
-            "state": make,
-            "name": length,
-            "city": price,
-            "state": address
+            "type": type,
+            "make": make,
+            "length": length,
+            "price": price,
+            "address": address
         ]
     }
     

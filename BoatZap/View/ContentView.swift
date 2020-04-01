@@ -9,7 +9,7 @@
 import SwiftUI
 import Firebase
 
-let BoatsCollectionRef = Firestore.firestore().collection("boats")
+let boatsCollectionRef = Firestore.firestore().collection("boats")
 
 struct ContentView: View {
     var body: some View {
@@ -27,14 +27,17 @@ struct ContentView: View {
                 NavigationLink(destination: BuyerHomeView()) {
                     Text("Buyer Home View")
                 }
-                NavigationLink(destination: ListBoatView()) {
-                    Text("List Boat")
-                }
+//                NavigationLink(destination: ListBoatView()) {
+//                    Text("List Boat")
+//                }
                 NavigationLink(destination: AddBoatView()) {
                     Text("Add Boat")
                 }
                 NavigationLink(destination: CreditView()) {
                     Text("Credits")
+                }
+                NavigationLink(destination: BoatSearchView()) {
+                    Text("Boat Search")
                 }
             }
         }

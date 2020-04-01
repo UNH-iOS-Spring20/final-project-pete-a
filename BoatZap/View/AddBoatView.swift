@@ -80,7 +80,7 @@ struct AddBoatView: View {
                     "address": address
                 ]
             
-            BoatsCollectionRef.addDocument(data: data)
+            boatsCollectionRef.addDocument(data: data)
             dismiss()
         }
     }
