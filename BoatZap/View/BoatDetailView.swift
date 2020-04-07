@@ -16,7 +16,6 @@ struct BoatDetailView: View {
         self.boat = boat
     }
     
-    
     var body: some View {
         VStack {
             HStack {

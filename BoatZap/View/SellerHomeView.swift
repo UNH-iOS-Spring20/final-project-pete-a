@@ -43,7 +43,6 @@ struct SellerHomeView: View {
     }
 }
 
-
 struct SellerHomeView_Previews: PreviewProvider {
     static var previews: some View {
         SellerHomeView()

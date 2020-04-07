@@ -8,10 +8,9 @@
 
 import SwiftUI
 
-
 struct BuyerHomeView: View {
    var body: some View {
-        NavigationView {
+        Group {
             VStack {
                 NavigationLink(destination: HomeView()) {
                     Text("Sailboat Listings")
@@ -53,8 +52,6 @@ struct BuyerHomeView: View {
             .navigationBarTitle(Text("Buyer's Home"))
     }
 }
-
-
 
 struct BuyerHomeView_Previews: PreviewProvider {
     static var previews: some View {

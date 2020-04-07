@@ -12,7 +12,7 @@ import FirebaseFirestore
 struct BoatSearchView: View {
     @ObservedObject private var boats = FirebaseCollection<Boat>(collectionRef: boatsCollectionRef)
     var body: some View {
-        NavigationView {
+        Group {
             VStack {
                 NavigationLink(destination: AddBoatView()) {
                     Text("Add Boat")

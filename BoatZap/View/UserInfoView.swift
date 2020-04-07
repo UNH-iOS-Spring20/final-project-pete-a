@@ -10,8 +10,6 @@ import SwiftUI
 import FirebaseFirestore
 import Firebase
 
-//let db = Firestore.firestore()
-
 struct UserInfoView: View {
     
     @State private var firstName: String = ""
