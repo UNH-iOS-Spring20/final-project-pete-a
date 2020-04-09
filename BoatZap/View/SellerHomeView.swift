@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SellerHomeView: View {
     var body: some View {
-        NavigationView {
+        Group {
             VStack {
                 NavigationLink(destination: BuyerHomeView()) {
                     Text("Seller's Home")

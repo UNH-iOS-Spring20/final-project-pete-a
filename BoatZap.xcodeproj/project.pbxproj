@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0F0A2151241F1E9800F608C5 /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A2150241F1E9800F608C5 /* Boat.swift */; };
 		0F0A2153241F2C9F00F608C5 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A2152241F2C9F00F608C5 /* CreditView.swift */; };
+		0F279B14243D6B4D001A409D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AF23FB03D900B765F3 /* ContentView.swift */; };
+		0F279B17243EB657001A409D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F279B16243EB657001A409D /* MapView.swift */; };
 		0F4645AC23FB03D900B765F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AB23FB03D900B765F3 /* AppDelegate.swift */; };
 		0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AD23FB03D900B765F3 /* SceneDelegate.swift */; };
-		0F4645B023FB03D900B765F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AF23FB03D900B765F3 /* ContentView.swift */; };
 		0F4645B223FB03DA00B765F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4645B123FB03DA00B765F3 /* Assets.xcassets */; };
 		0F4645B523FB03DA00B765F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4645B423FB03DA00B765F3 /* Preview Assets.xcassets */; };
 		0F4645B823FB03DA00B765F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4645B623FB03DA00B765F3 /* LaunchScreen.storyboard */; };
@@ -19,40 +20,22 @@
 		0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645CD23FB03DA00B765F3 /* BoatZapUITests.swift */; };
 		0F718510242C641600A077C9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71850F242C641600A077C9 /* SignInView.swift */; };
 		0F718512242C6EFD00A077C9 /* BoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* BoatLocationView.swift */; };
-		0F718513242C6EFD00A077C9 /* BoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* BoatLocationView.swift */; };
-		0F718514242C6EFD00A077C9 /* BoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* BoatLocationView.swift */; };
 		0F7185162431A56200A077C9 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185152431A56200A077C9 /* FirebaseCollection.swift */; };
 		0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185152431A56200A077C9 /* FirebaseCollection.swift */; };
 		0F7185192432E96700A077C9 /* AddBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185182432E96700A077C9 /* AddBoatView.swift */; };
-		0F71851A2432E96700A077C9 /* AddBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185182432E96700A077C9 /* AddBoatView.swift */; };
-		0F71851B2432E96700A077C9 /* AddBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185182432E96700A077C9 /* AddBoatView.swift */; };
 		0F71851D243434D200A077C9 /* BoatSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71851C243434D200A077C9 /* BoatSearchView.swift */; };
-		0F71851E243434D200A077C9 /* BoatSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71851C243434D200A077C9 /* BoatSearchView.swift */; };
-		0F71851F243434D200A077C9 /* BoatSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71851C243434D200A077C9 /* BoatSearchView.swift */; };
 		0F7185212434386000A077C9 /* BoatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185202434386000A077C9 /* BoatDetailView.swift */; };
-		0F7185222434386000A077C9 /* BoatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185202434386000A077C9 /* BoatDetailView.swift */; };
-		0F7185232434386000A077C9 /* BoatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185202434386000A077C9 /* BoatDetailView.swift */; };
 		0F7185252434422600A077C9 /* EditBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185242434422600A077C9 /* EditBoatView.swift */; };
-		0F7185262434422600A077C9 /* EditBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185242434422600A077C9 /* EditBoatView.swift */; };
-		0F7185272434422600A077C9 /* EditBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185242434422600A077C9 /* EditBoatView.swift */; };
 		0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
-		0F7A9DE5240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
-		0F7A9DE6240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
 		0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
 		0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
 		0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
 		0FBFE427240F58B50071C70D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
-		0FBFE428240F58B50071C70D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
-		0FBFE429240F58B50071C70D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
 		0FBFE42B240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
 		0FBFE42C240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
 		0FBFE42D240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
 		0FBFE42F2410A1DA0071C70D /* SellerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */; };
-		0FBFE4302410A1DA0071C70D /* SellerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */; };
-		0FBFE4312410A1DA0071C70D /* SellerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */; };
 		0FBFE4332410A6F40071C70D /* BuyerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */; };
-		0FBFE4342410A6F40071C70D /* BuyerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */; };
-		0FBFE4352410A6F40071C70D /* BuyerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */; };
 		0FD1842923FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
 		0FD1842A23FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
 		0FD1842B23FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
@@ -82,6 +65,7 @@
 		0AF2E27727D407F3EC01C298 /* Pods_BoatZap_BoatZapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoatZap_BoatZapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0A2150241F1E9800F608C5 /* Boat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boat.swift; sourceTree = "<group>"; };
 		0F0A2152241F2C9F00F608C5 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
+		0F279B16243EB657001A409D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0F4645A823FB03D900B765F3 /* BoatZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoatZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4645AB23FB03D900B765F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F4645AD23FB03D900B765F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +222,7 @@
 				0F71851C243434D200A077C9 /* BoatSearchView.swift */,
 				0F7185202434386000A077C9 /* BoatDetailView.swift */,
 				0F7185242434422600A077C9 /* EditBoatView.swift */,
+				0F279B16243EB657001A409D /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -565,9 +550,10 @@
 				0FBFE4332410A6F40071C70D /* BuyerHomeView.swift in Sources */,
 				0F7185212434386000A077C9 /* BoatDetailView.swift in Sources */,
 				0F71851D243434D200A077C9 /* BoatSearchView.swift in Sources */,
+				0F279B14243D6B4D001A409D /* ContentView.swift in Sources */,
+				0F279B17243EB657001A409D /* MapView.swift in Sources */,
 				0F7185192432E96700A077C9 /* AddBoatView.swift in Sources */,
 				0FBFE42F2410A1DA0071C70D /* SellerHomeView.swift in Sources */,
-				0F4645B023FB03D900B765F3 /* ContentView.swift in Sources */,
 				0F0A2151241F1E9800F608C5 /* Boat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,18 +562,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F7A9DE5240B763C00D921BB /* UserInfoView.swift in Sources */,
-				0FBFE4302410A1DA0071C70D /* SellerHomeView.swift in Sources */,
-				0F718513242C6EFD00A077C9 /* BoatLocationView.swift in Sources */,
 				0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */,
 				0FBFE42C240F5A780071C70D /* Profile.swift in Sources */,
-				0FBFE428240F58B50071C70D /* HomeView.swift in Sources */,
-				0FBFE4342410A6F40071C70D /* BuyerHomeView.swift in Sources */,
-				0F7185222434386000A077C9 /* BoatDetailView.swift in Sources */,
-				0F71851E243434D200A077C9 /* BoatSearchView.swift in Sources */,
 				0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */,
-				0F7185262434422600A077C9 /* EditBoatView.swift in Sources */,
-				0F71851A2432E96700A077C9 /* AddBoatView.swift in Sources */,
 				0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,18 +573,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F7A9DE6240B763C00D921BB /* UserInfoView.swift in Sources */,
-				0F71851F243434D200A077C9 /* BoatSearchView.swift in Sources */,
-				0FBFE4312410A1DA0071C70D /* SellerHomeView.swift in Sources */,
-				0F7185232434386000A077C9 /* BoatDetailView.swift in Sources */,
-				0F718514242C6EFD00A077C9 /* BoatLocationView.swift in Sources */,
 				0FBFE42D240F5A780071C70D /* Profile.swift in Sources */,
-				0FBFE429240F58B50071C70D /* HomeView.swift in Sources */,
-				0FBFE4352410A6F40071C70D /* BuyerHomeView.swift in Sources */,
-				0F7185272434422600A077C9 /* EditBoatView.swift in Sources */,
 				0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */,
-				0F71851B2432E96700A077C9 /* AddBoatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
