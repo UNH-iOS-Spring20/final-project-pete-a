@@ -18,5 +18,11 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>BoatZap uses location services find the boats</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>BoatZap uses location services find the boats</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>BoatZap uses location services find the boats</string>
 </dict>
 </plist>

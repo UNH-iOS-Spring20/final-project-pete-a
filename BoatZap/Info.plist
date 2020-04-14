@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSLocationWhenInUseUsageDescription</key>
+   <string>BoatZap uses location services find the boats</string>
+   <key>NSLocationWhenInUseUsageDescription</key>
+   <string>BoatZap uses location services find the boats</string>
+   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+   <string>BoatZap uses location services find the boats</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

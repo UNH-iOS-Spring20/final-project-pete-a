@@ -33,6 +33,9 @@ struct ContentView: View {
                 NavigationLink(destination: MapView()) {
                     Text("Boat Location View")
                 }
+                NavigationLink(destination: LocationDataTestView()) {
+                    Text("Boat Location Test View")
+                }
                 NavigationLink(destination: CreditView()) {
                     Text("Credits")
                 }
