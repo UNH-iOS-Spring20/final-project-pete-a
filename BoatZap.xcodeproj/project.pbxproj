@@ -18,7 +18,7 @@
 		0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645C223FB03DA00B765F3 /* BoatZapTests.swift */; };
 		0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645CD23FB03DA00B765F3 /* BoatZapUITests.swift */; };
 		0F718510242C641600A077C9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71850F242C641600A077C9 /* SignInView.swift */; };
-		0F718512242C6EFD00A077C9 /* BoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* BoatLocationView.swift */; };
+		0F718512242C6EFD00A077C9 /* SetBoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* SetBoatLocationView.swift */; };
 		0F7185162431A56200A077C9 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185152431A56200A077C9 /* FirebaseCollection.swift */; };
 		0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185152431A56200A077C9 /* FirebaseCollection.swift */; };
 		0F7185192432E96700A077C9 /* AddBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185182432E96700A077C9 /* AddBoatView.swift */; };
@@ -83,7 +83,7 @@
 		0F4645CD23FB03DA00B765F3 /* BoatZapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatZapUITests.swift; sourceTree = "<group>"; };
 		0F4645CF23FB03DA00B765F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F71850F242C641600A077C9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInView.swift; path = BoatZap/View/SignInView.swift; sourceTree = SOURCE_ROOT; };
-		0F718511242C6EFD00A077C9 /* BoatLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoatLocationView.swift; path = BoatZap/View/BoatLocationView.swift; sourceTree = SOURCE_ROOT; };
+		0F718511242C6EFD00A077C9 /* SetBoatLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetBoatLocationView.swift; path = BoatZap/View/SetBoatLocationView.swift; sourceTree = SOURCE_ROOT; };
 		0F7185152431A56200A077C9 /* FirebaseCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollection.swift; sourceTree = "<group>"; };
 		0F7185182432E96700A077C9 /* AddBoatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddBoatView.swift; path = BoatZap/View/AddBoatView.swift; sourceTree = SOURCE_ROOT; };
 		0F71851C243434D200A077C9 /* BoatSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoatSearchView.swift; path = BoatZap/View/BoatSearchView.swift; sourceTree = SOURCE_ROOT; };
@@ -222,7 +222,7 @@
 				0FBFE426240F58B50071C70D /* HomeView.swift */,
 				0F0A2152241F2C9F00F608C5 /* CreditView.swift */,
 				0F71850F242C641600A077C9 /* SignInView.swift */,
-				0F718511242C6EFD00A077C9 /* BoatLocationView.swift */,
+				0F718511242C6EFD00A077C9 /* SetBoatLocationView.swift */,
 				0F7185182432E96700A077C9 /* AddBoatView.swift */,
 				0F71851C243434D200A077C9 /* BoatSearchView.swift */,
 				0F7185202434386000A077C9 /* BoatDetailView.swift */,
@@ -545,7 +545,7 @@
 				0FFDE5052445550200C43AE3 /* LocationDataTestView.swift in Sources */,
 				0F4645AC23FB03D900B765F3 /* AppDelegate.swift in Sources */,
 				0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */,
-				0F718512242C6EFD00A077C9 /* BoatLocationView.swift in Sources */,
+				0F718512242C6EFD00A077C9 /* SetBoatLocationView.swift in Sources */,
 				0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */,
 				0F7185162431A56200A077C9 /* FirebaseCollection.swift in Sources */,

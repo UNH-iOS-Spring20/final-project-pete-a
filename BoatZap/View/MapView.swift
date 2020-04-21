@@ -41,8 +41,6 @@ import CoreLocation
 struct MapView: UIViewRepresentable {
   
   var locationManager = CLLocationManager()
-   // var boatLocaton =  CLLocationCoordinate2DMake();
-    // TODO GRAB BOAT LOCATION
   func setupManager() {
     locationManager.desiredAccuracy = kCLLocationAccuracyBest
     locationManager.requestWhenInUseAuthorization()

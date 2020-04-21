@@ -30,7 +30,13 @@ struct ContentView: View {
                 NavigationLink(destination: AddBoatView()) {
                     Text("Add Boat")
                 }
-                NavigationLink(destination: MapView()) {
+                NavigationLink(destination: BoatSearchView()) {
+                    Text("Boat Search")
+                }
+//                NavigationLink(destination: MapView()) {  
+//                    Text("Boat Location View")
+//                }
+                NavigationLink(destination: SetBoatLocationView()) {
                     Text("Boat Location View")
                 }
                 NavigationLink(destination: LocationDataTestView()) {
@@ -38,9 +44,6 @@ struct ContentView: View {
                 }
                 NavigationLink(destination: CreditView()) {
                     Text("Credits")
-                }
-                NavigationLink(destination: BoatSearchView()) {
-                    Text("Boat Search")
                 }
             }
         }
