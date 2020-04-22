@@ -17,32 +17,37 @@ struct BoatDetailView: View {
     }
     
     var body: some View {
-        VStack {
-            HStack {
-                Text(boat.name)
-                Text(boat.type)
-                Text(boat.make)
-                Text(boat.length)
-                Text(boat.price)
-                Text(boat.address)
-                Spacer()
-            }
-            NavigationLink(destination: EditBoatView(boat: boat)) {
-                Text("Edit")
-            }
-        }
+        VStack(alignment: .leading) {
+            Text("Boat Detail")
+                .font(.largeTitle)
+                .foregroundColor(Color.blue)
+            Spacer()
+            Text("Name: " + boat.name)
+                .font(.headline)
+                .padding(5)
+            Text("Type: " + boat.type)
+                .font(.headline)
+                .padding(5)
+            Text("Make: " + boat.make)
+                .font(.headline)
+                .padding(5)
+            Text("Length: " + boat.length)
+                .font(.headline)
+                .padding(5)
+            Text("Price: " + boat.price)
+                .font(.headline)
+                .padding(5)
+            Text("Address: " + boat.address)
+                .font(.headline)
+                .padding(5)
+            Spacer()
+            
+        }.frame(width: 400, height: 400, alignment: .topLeading)
     }
 }
 
 struct BoatDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        BoatDetailView(boat:
-            Boat(id: "1", data: ["name": "Ocean 1",
-                                                "type": "sailboat",
-                                                "make": "C&C",
-                                                "length": "54",
-                                                "price": "450000",
-                                                "address": "123 Sailboat Dr."])!
-        )
+        BoatDetailView(boat: Boat.example)
     }
 }

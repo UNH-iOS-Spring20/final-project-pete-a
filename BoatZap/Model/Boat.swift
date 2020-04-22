@@ -46,4 +46,13 @@ class Boat : FirebaseCodable {
         self.price = price
         self.address = address
     }
+    
+    #if DEBUG
+    static let example = Boat(id: "1", data: ["name": "Test Boat Name",
+                                              "type": "Sailboat",
+                                              "make": "Race Boat",
+                                              "length": "44.5",
+                                              "price": "99,999.98",
+                                              "address": "56 State Street "])!
+    #endif
 }

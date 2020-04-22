@@ -64,13 +64,6 @@ struct EditBoatView: View {
 
 struct EditBoatView_Previews: PreviewProvider {
     static var previews: some View {
-        EditBoatView(boat: Boat(id: "1", data: ["name": "Ocean 1",
-                                                "make": "C&C",
-                                                "type": "Sailboat",
-                                                "length": "34",
-                                                "price": "45566",
-                                                "address": "123 Sailboat Rd."
-        ])!
-        )
+        EditBoatView(boat: Boat.example)
     }
 }

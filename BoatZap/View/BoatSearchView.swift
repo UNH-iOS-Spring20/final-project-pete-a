@@ -36,3 +36,4 @@ struct BoatSearchView_Previews: PreviewProvider {
         BoatSearchView()
     }
 }
+

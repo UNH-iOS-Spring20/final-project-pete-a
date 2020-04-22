@@ -4,7 +4,7 @@
 //
 //  Created on 4/13/20.
 //  Most of this code is from
-// https://stackoverflow.com/questions/57681885/how-to-get-current-location-using-swiftui-without-viewcontrollers
+//  https://stackoverflow.com/questions/57681885/how-to-get-current-location-using-swiftui-without-viewcontrollers
 //  Copyright © 2020 Peter Aurigemma. All rights reserved.
 //
 

@@ -12,11 +12,11 @@ import FirebaseUI
 
 struct SignInView: View {
     
-//    FirebaseApp.configure()
+   // FirebaseApp.configure()
 //    let authUI = FUIAuth.defaultAuthUI()
 //    // You need to adopt a FUIAuthDelegate protocol to receive callback
 //    authUI.delegate = self
-//    
+    
     
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)

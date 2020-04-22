@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct AddBoatView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -70,7 +71,7 @@ struct AddBoatView: View {
     }
     
     func addBoat() {
-        if !name.isEmpty && !make.isEmpty && !type.isEmpty {
+        if !name.isEmpty && !make.isEmpty && !type.isEmpty && !length.isEmpty && !price.isEmpty && !address.isEmpty{
             let data = [
                     "name": name,
                     "type": type,

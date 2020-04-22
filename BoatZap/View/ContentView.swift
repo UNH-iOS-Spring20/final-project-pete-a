@@ -21,6 +21,9 @@ struct ContentView: View {
                 NavigationLink(destination: UserInfoView()) {
                     Text("New Users View")
                 }
+                NavigationLink(destination: CustomSearch()) {
+                    Text("Custom Search Bar")
+                }
                 NavigationLink(destination: SellerHomeView()) {
                     Text("Seller Home View")
                 }
