@@ -17,6 +17,8 @@ struct AddBoatView: View {
     @State private var length = ""
     @State private var price = ""
     @State private var address = ""
+    @State private var latitude = ""
+    @State private var longitude = ""
     
     var body: some View {
         Group {
@@ -78,11 +80,15 @@ struct AddBoatView: View {
                     "make": make,
                     "length": length,
                     "price": price,
-                    "address": address
+                    "address": address,
+                    "latitude": latitude,
+                    "longitude": longitude
+                    
                 ]
             
             boatsCollectionRef.addDocument(data: data)
             dismiss()
+            //SetBoatLocationView(boatRef: boatRef)
         }
     }
     

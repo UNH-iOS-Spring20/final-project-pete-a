@@ -10,6 +10,7 @@ import SwiftUI
 import FirebaseFirestore
 
 struct BoatDetailView: View {
+   // @ObservedObject private var boats = FirebaseCollection<Boat>(collectionRef: boatsCollectionRef)
     @ObservedObject var boat: Boat
     
     init(boat: Boat) {
@@ -21,7 +22,7 @@ struct BoatDetailView: View {
             Text("Boat Detail")
                 .font(.largeTitle)
                 .foregroundColor(Color.blue)
-            Spacer()
+            //Spacer()
             Text("Name: " + boat.name)
                 .font(.headline)
                 .padding(5)
@@ -40,7 +41,20 @@ struct BoatDetailView: View {
             Text("Address: " + boat.address)
                 .font(.headline)
                 .padding(5)
-            Spacer()
+            Text("Lat and long: " + boat.latitude + ", " + boat.longitude )
+                .font(.headline)
+                .padding(5)
+//            Text("Longitude: " + boat.longitude)
+//                .font(.headline)
+//                .padding(5)
+            NavigationLink(destination: EditBoatView(boat: boat)) {
+                Text("Edit")
+            }
+            NavigationLink(destination: SetBoatLocationView(boat: boat)) {
+                Text("Update Boat Location")
+//            }
+            }
+           // Spacer()
             
         }.frame(width: 400, height: 400, alignment: .topLeading)
     }

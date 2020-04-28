@@ -52,7 +52,8 @@ struct EditBoatView: View {
         .padding()
     }
     func updateBoat() {
-        if !boat.name.isEmpty && !boat.type.isEmpty && !boat.make.isEmpty && !boat.length.isEmpty && !boat.price.isEmpty && !boat.address.isEmpty { boatsCollectionRef.document(boat.id).setData(boat.data)
+        if !boat.name.isEmpty && !boat.type.isEmpty && !boat.make.isEmpty && !boat.length.isEmpty && !boat.price.isEmpty && !boat.address.isEmpty {
+            boatsCollectionRef.document(boat.id).setData(boat.data)
             dismiss()
         }
     }

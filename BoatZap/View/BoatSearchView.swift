@@ -12,6 +12,9 @@ import FirebaseFirestore
 struct BoatSearchView: View {
     @ObservedObject private var boats = FirebaseCollection<Boat>(collectionRef: boatsCollectionRef)
     var body: some View {
+        
+        
+        /// TODO get observbables working here
         Group {
             VStack {
                 NavigationLink(destination: AddBoatView()) {
@@ -36,4 +39,5 @@ struct BoatSearchView_Previews: PreviewProvider {
         BoatSearchView()
     }
 }
+
 
