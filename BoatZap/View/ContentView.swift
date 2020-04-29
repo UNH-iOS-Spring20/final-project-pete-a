@@ -14,43 +14,92 @@ let boatsCollectionRef = Firestore.firestore().collection("boats")
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Text("BoatZap Navagator")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.blue)
-                NavigationLink(destination: UserInfoView()) {
-                    Text("New Users View")
+            ZStack {
+                Color.black.edgesIgnoringSafeArea(.all)
+                VStack( spacing: 5) {
+                    Text("BoatZap Navagator")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.blue)
+                    NavigationLink(destination: UserInfoView()) {
+                        Text("New Users View")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    NavigationLink(destination: CustomSearch()) {
+                        Text("Custom Search Bar")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    NavigationLink(destination: SellerHomeView()) {
+                        Text("Seller Home View")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    NavigationLink(destination: BuyerHomeView()) {
+                        Text("Buyer Home View")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    NavigationLink(destination: AddBoatView()) {
+                        Text("Add Boat")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    NavigationLink(destination: BoatSearchView()) {
+                        Text("Boat Search")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    NavigationLink(destination: LocationDataTestView()) {
+                        Text("Boat Location Test View")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    NavigationLink(destination: CreditView()) {
+                        Text("Credits")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    //Spacer()
                 }
-                NavigationLink(destination: CustomSearch()) {
-                    Text("Custom Search Bar")
-                }
-                NavigationLink(destination: SellerHomeView()) {
-                    Text("Seller Home View")
-                }
-                NavigationLink(destination: BuyerHomeView()) {
-                    Text("Buyer Home View")
-                }
-                NavigationLink(destination: AddBoatView()) {
-                    Text("Add Boat")
-                }
-                NavigationLink(destination: BoatSearchView()) {
-                    Text("Boat Search")
-                }
-//                NavigationLink(destination: MapView()) {  
-//                    Text("Boat Location View")
-//                }
-//                NavigationLink(destination: SetBoatLocationView()) {
-//                    Text("Boat Location View")
-//                }
-                NavigationLink(destination: LocationDataTestView()) {
-                    Text("Boat Location Test View")
-                }
-                NavigationLink(destination: CreditView()) {
-                    Text("Credits")
-                }
+                //Spacer()
             }
         }
+        
     }
+    //.padding()
 }
 
 struct ContentView_Previews: PreviewProvider {

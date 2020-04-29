@@ -21,43 +21,61 @@ struct AddBoatView: View {
     @State private var longitude = ""
     
     var body: some View {
+        ZStack{
+            Color.black.edgesIgnoringSafeArea(.all)
         Group {
             VStack(spacing: 25) {
+                Text("Add Boat")
+                .font(.largeTitle)
+                .foregroundColor(Color.blue)
+                
                 HStack {
                     Text("Boat Name:")
+                    .foregroundColor(Color.blue)
                         //.padding(3)
                     TextField("Enter Name", text: $name)
-                        .background(Color.white)
+                    .padding(3)
+                        .background(Color.blue)
                         //.padding(3)
                 }
                 HStack {
                     Text("Boat Type:")
+                    .foregroundColor(Color.blue)
                     TextField("Boat Type", text: $type)
-                        .background(Color.white)
+                        .padding(3)
+                        .background(Color.blue)
                         .padding(3)
                 }
                 HStack {
                     Text("Boat Make")
+                    .foregroundColor(Color.blue)
                     TextField("Enter Boat Make", text: $make)
-                        .background(Color.white)
+                        .padding(3)
+                        .background(Color.blue)
                         .padding(3)
                 }
                 HStack {
                     Text("Boat length")
+                    .foregroundColor(Color.blue)
                     TextField("Enter Boat Length", text: $length)
-                        .background(Color.white)
+                        .padding(3)
+                        .background(Color.blue)
                         .padding(3)
                 }
                 HStack {
                     Text("Asking Price")
+                    .foregroundColor(Color.blue)
                     TextField("Enter Price", text: $price)
-                        .background(Color.white)
+                        .padding(3)
+                        .background(Color.blue)
                         .padding(3)
                 }
                 HStack {
                     Text("Boat Address")
+                    .foregroundColor(Color.blue)
                     TextField("Enter Address", text: $address)
-                        .background(Color.white)
+                        .padding(3)
+                        .background(Color.blue)
                         .padding(3)
                 }
                 Button(action: {
@@ -65,11 +83,17 @@ struct AddBoatView: View {
                 }) {
                     Text("Add")
                 }
-                Spacer()
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+                .padding(10)
+                .background(Color.blue)
+                .cornerRadius(15)
+                
             }
-            .navigationBarTitle("Add Boat")
         }
         .padding()
+    }
     }
     
     func addBoat() {

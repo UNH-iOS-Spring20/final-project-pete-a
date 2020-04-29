@@ -12,11 +12,13 @@ import FirebaseFirestore
 struct BoatSearchView: View {
     @ObservedObject private var boats = FirebaseCollection<Boat>(collectionRef: boatsCollectionRef)
     var body: some View {
-        
-        
-        /// TODO get observbables working here
+        ZStack{
+            Color.black.edgesIgnoringSafeArea(.all)
         Group {
             VStack {
+                Text("Boat List")
+                .font(.largeTitle)
+                .foregroundColor(Color.blue)
                 NavigationLink(destination: AddBoatView()) {
                     Text("Add Boat")
                 }
@@ -24,14 +26,23 @@ struct BoatSearchView: View {
                     ForEach(boats.items) { boat in
                         NavigationLink(destination: BoatDetailView(boat: boat)) {
                             Text(boat.name)
+                                
+                            .foregroundColor(Color.black)
+                            //.background(Color.blue)
                         }
                     }//.onDelete(perform: deleteBoat)
                 }
+                    //.foregroundColor(Color.blue)
+                    .colorMultiply(.blue)
+                 //   .listRowBackground(Color.red)
+                
+                //.background(Color.blue)
             }
-            .navigationBarTitle("BOAT SEARCH")
-            .navigationBarItems(leading: EditButton())
+           // .navigationBarTitle("BOAT SEARCH")
+           // .navigationBarItems(leading: EditButton())
         }
     }
+}
 }
 
 struct BoatSearchView_Previews: PreviewProvider {
