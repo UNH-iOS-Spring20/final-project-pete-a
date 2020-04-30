@@ -112,7 +112,6 @@ struct AddBoatView: View {
             
             boatsCollectionRef.addDocument(data: data)
             dismiss()
-            //SetBoatLocationView(boatRef: boatRef)
         }
     }
     
