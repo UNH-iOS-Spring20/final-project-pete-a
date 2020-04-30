@@ -41,6 +41,9 @@
 		0FF3C70E244FE83700BF103B /* CustomSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C70D244FE83700BF103B /* CustomSearch.swift */; };
 		0FF3C70F244FE83700BF103B /* CustomSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C70D244FE83700BF103B /* CustomSearch.swift */; };
 		0FF3C710244FE83700BF103B /* CustomSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C70D244FE83700BF103B /* CustomSearch.swift */; };
+		0FF3C712245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
+		0FF3C713245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
+		0FF3C714245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
 		0FFDE5012442617100C43AE3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F279B16243EB657001A409D /* MapView.swift */; };
 		0FFDE5032445544500C43AE3 /* LocaionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5022445544500C43AE3 /* LocaionsManager.swift */; };
 		0FFDE5052445550200C43AE3 /* LocationDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */; };
@@ -100,6 +103,7 @@
 		0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BuyerHomeView.swift; path = BoatZap/View/BuyerHomeView.swift; sourceTree = SOURCE_ROOT; };
 		0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FF3C70D244FE83700BF103B /* CustomSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearch.swift; sourceTree = "<group>"; };
+		0FF3C711245A546700BF103B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0FFDE5022445544500C43AE3 /* LocaionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaionsManager.swift; sourceTree = "<group>"; };
 		0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataTestView.swift; sourceTree = "<group>"; };
 		17980801E2FF72572297A204 /* Pods-BoatZap-BoatZapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap-BoatZapUITests.release.xcconfig"; path = "Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				0FBFE42A240F5A780071C70D /* Profile.swift */,
 				0F0A2150241F1E9800F608C5 /* Boat.swift */,
 				0FFDE5022445544500C43AE3 /* LocaionsManager.swift */,
+				0FF3C711245A546700BF103B /* ImagePicker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -560,6 +565,7 @@
 				0FBFE427240F58B50071C70D /* HomeView.swift in Sources */,
 				0FBFE42B240F5A780071C70D /* Profile.swift in Sources */,
 				0FBFE4332410A6F40071C70D /* BuyerHomeView.swift in Sources */,
+				0FF3C712245A546700BF103B /* ImagePicker.swift in Sources */,
 				0F7185212434386000A077C9 /* BoatDetailView.swift in Sources */,
 				0F71851D243434D200A077C9 /* BoatSearchView.swift in Sources */,
 				0F279B14243D6B4D001A409D /* ContentView.swift in Sources */,
@@ -579,6 +585,7 @@
 				0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */,
 				0FBFE42C240F5A780071C70D /* Profile.swift in Sources */,
 				0FF3C70F244FE83700BF103B /* CustomSearch.swift in Sources */,
+				0FF3C713245A546700BF103B /* ImagePicker.swift in Sources */,
 				0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */,
 			);
@@ -590,6 +597,7 @@
 			files = (
 				0FBFE42D240F5A780071C70D /* Profile.swift in Sources */,
 				0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */,
+				0FF3C714245A546700BF103B /* ImagePicker.swift in Sources */,
 				0FF3C710244FE83700BF103B /* CustomSearch.swift in Sources */,
 				0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */,
 			);

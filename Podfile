@@ -9,6 +9,7 @@ target 'BoatZap' do
   pod 'FirebaseUI'
   #pod 'Firebase'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
   
   #pod 'Firebase/Analytics'
   #pod 'Firebase/Database'
