@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,6 +44,22 @@
 		0FF3C712245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
 		0FF3C713245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
 		0FF3C714245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
+		0FF3C716245E3C0200BF103B /* BoatPics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C715245E3C0200BF103B /* BoatPics.swift */; };
+		0FF3C717245E3C0200BF103B /* BoatPics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C715245E3C0200BF103B /* BoatPics.swift */; };
+		0FF3C718245E3C0200BF103B /* BoatPics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C715245E3C0200BF103B /* BoatPics.swift */; };
+		0FF3C71A245E438C00BF103B /* BoatPicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */; };
+		0FF3C71B245E438C00BF103B /* BoatPicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */; };
+		0FF3C71C245E438C00BF103B /* BoatPicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */; };
+		0FF3C71E245E46C500BF103B /* BoatPicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C71D245E46C500BF103B /* BoatPicRow.swift */; };
+		0FF3C71F245E46C500BF103B /* BoatPicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C71D245E46C500BF103B /* BoatPicRow.swift */; };
+		0FF3C720245E46C500BF103B /* BoatPicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C71D245E46C500BF103B /* BoatPicRow.swift */; };
+		0FF3C722245E4A3B00BF103B /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */; };
+		0FF3C723245E4A3B00BF103B /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */; };
+		0FF3C724245E4A3B00BF103B /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */; };
+		0FF3C72B245E954B00BF103B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0FF3C72A245E954B00BF103B /* SDWebImageSwiftUI */; };
+		0FF3C72D245E976400BF103B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C72C245E976400BF103B /* ImageView.swift */; };
+		0FF3C72E245E976400BF103B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C72C245E976400BF103B /* ImageView.swift */; };
+		0FF3C72F245E976400BF103B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C72C245E976400BF103B /* ImageView.swift */; };
 		0FFDE5012442617100C43AE3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F279B16243EB657001A409D /* MapView.swift */; };
 		0FFDE5032445544500C43AE3 /* LocaionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5022445544500C43AE3 /* LocaionsManager.swift */; };
 		0FFDE5052445550200C43AE3 /* LocationDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */; };
@@ -104,6 +120,11 @@
 		0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FF3C70D244FE83700BF103B /* CustomSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearch.swift; sourceTree = "<group>"; };
 		0FF3C711245A546700BF103B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0FF3C715245E3C0200BF103B /* BoatPics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatPics.swift; sourceTree = "<group>"; };
+		0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatPicDetailView.swift; sourceTree = "<group>"; };
+		0FF3C71D245E46C500BF103B /* BoatPicRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatPicRow.swift; sourceTree = "<group>"; };
+		0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImage.swift; sourceTree = "<group>"; };
+		0FF3C72C245E976400BF103B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		0FFDE5022445544500C43AE3 /* LocaionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaionsManager.swift; sourceTree = "<group>"; };
 		0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataTestView.swift; sourceTree = "<group>"; };
 		17980801E2FF72572297A204 /* Pods-BoatZap-BoatZapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap-BoatZapUITests.release.xcconfig"; path = "Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF3C72B245E954B00BF103B /* SDWebImageSwiftUI in Frameworks */,
 				50928AE088299B3D11E8FB1E /* Pods_BoatZap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +239,7 @@
 				0F0A2150241F1E9800F608C5 /* Boat.swift */,
 				0FFDE5022445544500C43AE3 /* LocaionsManager.swift */,
 				0FF3C711245A546700BF103B /* ImagePicker.swift */,
+				0FF3C715245E3C0200BF103B /* BoatPics.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +262,10 @@
 				0F279B16243EB657001A409D /* MapView.swift */,
 				0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */,
 				0FF3C70D244FE83700BF103B /* CustomSearch.swift */,
+				0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */,
+				0FF3C71D245E46C500BF103B /* BoatPicRow.swift */,
+				0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */,
+				0FF3C72C245E976400BF103B /* ImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +320,9 @@
 			dependencies = (
 			);
 			name = BoatZap;
+			packageProductDependencies = (
+				0FF3C72A245E954B00BF103B /* SDWebImageSwiftUI */,
+			);
 			productName = BoatZap;
 			productReference = 0F4645A823FB03D900B765F3 /* BoatZap.app */;
 			productType = "com.apple.product-type.application";
@@ -369,6 +399,9 @@
 				Base,
 			);
 			mainGroup = 0F46459F23FB03D900B765F3;
+			packageReferences = (
+				0FF3C729245E954B00BF103B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 0F4645A923FB03D900B765F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -558,14 +591,19 @@
 				0F718512242C6EFD00A077C9 /* SetBoatLocationView.swift in Sources */,
 				0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */,
+				0FF3C71A245E438C00BF103B /* BoatPicDetailView.swift in Sources */,
 				0F7185162431A56200A077C9 /* FirebaseCollection.swift in Sources */,
+				0FF3C722245E4A3B00BF103B /* FirebaseImage.swift in Sources */,
 				0F7185252434422600A077C9 /* EditBoatView.swift in Sources */,
 				0F0A2153241F2C9F00F608C5 /* CreditView.swift in Sources */,
 				0F718510242C641600A077C9 /* SignInView.swift in Sources */,
+				0FF3C72D245E976400BF103B /* ImageView.swift in Sources */,
+				0FF3C71E245E46C500BF103B /* BoatPicRow.swift in Sources */,
 				0FBFE427240F58B50071C70D /* HomeView.swift in Sources */,
 				0FBFE42B240F5A780071C70D /* Profile.swift in Sources */,
 				0FBFE4332410A6F40071C70D /* BuyerHomeView.swift in Sources */,
 				0FF3C712245A546700BF103B /* ImagePicker.swift in Sources */,
+				0FF3C716245E3C0200BF103B /* BoatPics.swift in Sources */,
 				0F7185212434386000A077C9 /* BoatDetailView.swift in Sources */,
 				0F71851D243434D200A077C9 /* BoatSearchView.swift in Sources */,
 				0F279B14243D6B4D001A409D /* ContentView.swift in Sources */,
@@ -584,10 +622,15 @@
 			files = (
 				0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */,
 				0FBFE42C240F5A780071C70D /* Profile.swift in Sources */,
+				0FF3C71B245E438C00BF103B /* BoatPicDetailView.swift in Sources */,
+				0FF3C723245E4A3B00BF103B /* FirebaseImage.swift in Sources */,
+				0FF3C72E245E976400BF103B /* ImageView.swift in Sources */,
 				0FF3C70F244FE83700BF103B /* CustomSearch.swift in Sources */,
 				0FF3C713245A546700BF103B /* ImagePicker.swift in Sources */,
 				0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */,
+				0FF3C717245E3C0200BF103B /* BoatPics.swift in Sources */,
+				0FF3C71F245E46C500BF103B /* BoatPicRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,11 +638,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF3C72F245E976400BF103B /* ImageView.swift in Sources */,
 				0FBFE42D240F5A780071C70D /* Profile.swift in Sources */,
 				0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */,
+				0FF3C71C245E438C00BF103B /* BoatPicDetailView.swift in Sources */,
+				0FF3C718245E3C0200BF103B /* BoatPics.swift in Sources */,
 				0FF3C714245A546700BF103B /* ImagePicker.swift in Sources */,
+				0FF3C720245E46C500BF103B /* BoatPicRow.swift in Sources */,
 				0FF3C710244FE83700BF103B /* CustomSearch.swift in Sources */,
 				0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */,
+				0FF3C724245E4A3B00BF103B /* FirebaseImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,6 +962,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FF3C729245E954B00BF103B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FF3C72A245E954B00BF103B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FF3C729245E954B00BF103B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F4645A023FB03D900B765F3 /* Project object */;
 }

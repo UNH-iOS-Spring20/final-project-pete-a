@@ -9,86 +9,105 @@
 import SwiftUI
 import FirebaseFirestore
 import MapKit
-
+//import FirebaseUI/Storage
+import FirebaseStorage
+import SDWebImageSwiftUI
 
 struct BoatDetailView: View {
     
     @ObservedObject var boat: Boat
+    @ObservedObject var pics: FirebaseCollection<BoatPics>
+    private var boatPicCollectionRef: CollectionReference
+    
     
     init(boat: Boat) {
         self.boat = boat
+        self.boatPicCollectionRef = boatsCollectionRef.document(boat.id).collection("pictures")
+        self.pics = FirebaseCollection<BoatPics>(collectionRef: boatPicCollectionRef)
     }
     
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
-        VStack(alignment: .leading) {
-            Group{
-                Text("Boat Detail")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.blue)
-                Text("Name: " + boat.name)
-                    .foregroundColor(Color.blue)
-                    .font(.headline)
-                    .padding(5)
-                Text("Type: " + boat.type)
-                    .foregroundColor(Color.blue)
-                    .font(.headline)
-                    .padding(5)
-                Text("Make: " + boat.make)
-                    .foregroundColor(Color.blue)
-                    .font(.headline)
-                    .padding(5)
-                Text("Length: " + boat.length)
-                    .foregroundColor(Color.blue)
-                    .font(.headline)
-                    .padding(5)
-                Text("Price: " + boat.price)
-                    .foregroundColor(Color.blue)
-                    .font(.headline)
-                    .padding(5)
-                Text("Address: " + boat.address)
-                    .foregroundColor(Color.blue)
-                    .font(.headline)
-                    .padding(5)
-            }
-            VStack(alignment: .leading, spacing: 5){
-            if boat.latitude != "" || boat.longitude != "" {
-                Button(action: {
-                    self.navagateToBoat()
-                }) {
-                    Text("Navagate to boat")
+            VStack(alignment: .leading) {
+                Group{
+                    Text("Boat Detail")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.blue)
+                    Text("Name: " + boat.name)
+                        .foregroundColor(Color.blue)
+                        .font(.headline)
+                        .padding(5)
+                    Text("Type: " + boat.type)
+                        .foregroundColor(Color.blue)
+                        .font(.headline)
+                        .padding(5)
+                    Text("Make: " + boat.make)
+                        .foregroundColor(Color.blue)
+                        .font(.headline)
+                        .padding(5)
+                    Text("Length: " + boat.length)
+                        .foregroundColor(Color.blue)
+                        .font(.headline)
+                        .padding(5)
+                    Text("Price: " + boat.price)
+                        .foregroundColor(Color.blue)
+                        .font(.headline)
+                        .padding(5)
+                    Text("Address: " + boat.address)
+                        .foregroundColor(Color.blue)
+                        .font(.headline)
+                        .padding(5)
                 }
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .foregroundColor(Color.black)
-                .multilineTextAlignment(.center)
-                .padding(10)
-                .background(Color.blue)
-                .cornerRadius(15)
-            }
-            
-            NavigationLink(destination: EditBoatView(boat: boat)) {
-                Text("Edit Boat Information")
-            }
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .foregroundColor(Color.black)
-                .multilineTextAlignment(.center)
-                .padding(10)
-                .background(Color.blue)
-                .cornerRadius(15)
-            
-            NavigationLink(destination: SetBoatLocationView(boat: boat)) {
-                Text("Update Boat Location")
-            }
-            .frame(minWidth: 0, maxWidth: .infinity)
-            .foregroundColor(Color.black)
-            .multilineTextAlignment(.center)
-            .padding(10)
-            .background(Color.blue)
-            .cornerRadius(15)
+                VStack(alignment: .leading, spacing: 5){
+                    if boat.latitude != "" || boat.longitude != "" {
+                        Button(action: {
+                            self.navagateToBoat()
+                        }) {
+                            Text("Navagate to boat")
+                        }
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .foregroundColor(Color.black)
+                        .multilineTextAlignment(.center)
+                        .padding(10)
+                        .background(Color.blue)
+                        .cornerRadius(15)
+                    }
+                    
+                    NavigationLink(destination: EditBoatView(boat: boat)) {
+                        Text("Edit Boat Information")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    
+                    NavigationLink(destination: SetBoatLocationView(boat: boat)) {
+                        Text("Update Boat Location")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    
+                    Text("Pictures")
+                        .font(.largeTitle)
+                    List {
+                        ForEach(pics.items) { boatPic in
+                            NavigationLink(destination: BoatPicDetailView(boatPic: boatPic, boat: self.boat)) {
+                                BoatPicRow(boatPic: boatPic)
+                            }
+                        }
+                    }
+                    
+                    //FirebaseImage(id: "boatPics/CCSailboat.jpg")
+                }
+            }.frame(width: 400, height: 800, alignment: .topLeading)
         }
-        }.frame(width: 400, height: 800, alignment: .topLeading)
-    }
     }
     func navagateToBoat() {
         

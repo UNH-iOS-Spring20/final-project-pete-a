@@ -83,8 +83,8 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
-                    NavigationLink(destination: LocationDataTestView()) {
-                        Text("Boat Location Test View")
+                    NavigationLink(destination: ImageView()) {
+                        Text("Image View")
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
@@ -101,6 +101,7 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
+                    
                     //Spacer()
                 }
                 //Spacer()

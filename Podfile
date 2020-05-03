@@ -10,12 +10,13 @@ target 'BoatZap' do
   #pod 'Firebase'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
-  
+  pod 'FirebaseUI/Storage'
   #pod 'Firebase/Analytics'
   #pod 'Firebase/Database'
   pod 'Firebase/Firestore'
   #pod 'Firebase/Core'
   #pod 'FirebaseUI'
+  pod 'SDWebImage'
   
   #pod 'GoogleSignIn'
   #pod 'FirebaseUI/Auth'
