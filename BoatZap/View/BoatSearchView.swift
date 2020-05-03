@@ -14,35 +14,40 @@ struct BoatSearchView: View {
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
-        Group {
-            VStack {
-                Text("Boat List")
-                .font(.largeTitle)
-                .foregroundColor(Color.blue)
-                NavigationLink(destination: AddBoatView()) {
-                    Text("Add Boat")
-                }
-                List {
-                    ForEach(boats.items) { boat in
-                        NavigationLink(destination: BoatDetailView(boat: boat)) {
-                            Text(boat.name)
-                                
-                            .foregroundColor(Color.black)
-                            //.background(Color.blue)
-                        }
-                    }//.onDelete(perform: deleteBoat)
-                }
-                    //.foregroundColor(Color.blue)
+            Group {
+                VStack {
+                    Text("Boat List")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.blue)
+                    NavigationLink(destination: AddBoatView()) {
+                        Text("Add Boat")
+                    }
+                    List {
+                        ForEach(boats.items) { boat in
+                            NavigationLink(destination: BoatDetailView(boat: boat)) {
+                                Text(boat.name)
+                                    
+                                    .foregroundColor(Color.black)
+                            }
+                        }.onDelete(perform: deleteBoat)
+                    }
                     .colorMultiply(.blue)
-                 //   .listRowBackground(Color.red)
-                
-                //.background(Color.blue)
+                }
             }
-           // .navigationBarTitle("BOAT SEARCH")
-           // .navigationBarItems(leading: EditButton())
         }
     }
-}
+    func deleteBoat(at offsets: IndexSet) {
+        let index = offsets.first!
+        print("Deleting Boat: \(boats.items[index])")
+        let id = boats.items[index].id
+        boatsCollectionRef.document(id).delete() { error in
+            if let error = error {
+                print("Error removing document: \(error)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+    }
 }
 
 struct BoatSearchView_Previews: PreviewProvider {

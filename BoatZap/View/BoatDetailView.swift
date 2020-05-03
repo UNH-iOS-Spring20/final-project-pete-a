@@ -9,7 +9,6 @@
 import SwiftUI
 import FirebaseFirestore
 import MapKit
-//import FirebaseUI/Storage
 import FirebaseStorage
 import SDWebImageSwiftUI
 
@@ -94,8 +93,6 @@ struct BoatDetailView: View {
                     .background(Color.blue)
                     .cornerRadius(15)
                     
-                    Text("Pictures")
-                        .font(.largeTitle)
                     List {
                         ForEach(pics.items) { boatPic in
                             NavigationLink(destination: BoatPicDetailView(boatPic: boatPic, boat: self.boat)) {
@@ -103,8 +100,6 @@ struct BoatDetailView: View {
                             }
                         }
                     }
-                    
-                    //FirebaseImage(id: "boatPics/CCSailboat.jpg")
                 }
             }.frame(width: 400, height: 800, alignment: .topLeading)
         }

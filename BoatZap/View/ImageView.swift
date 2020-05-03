@@ -4,6 +4,7 @@
 //
 //  Created by Peter Aurigemma on 5/3/20.
 //  Copyright © 2020 Peter Aurigemma. All rights reserved.
+//  reference for this is from https://www.youtube.com/watch?v=PYpTto3iQXU
 //
 
 import SwiftUI
@@ -12,6 +13,13 @@ import Firebase
 
 
 struct ImageView: View {
+    
+//
+//    init(_ id: String){
+//    //        // the path to the image
+//            @State var url = "\(id)"
+//    }
+//
     
     @State var url = ""
     var body: some View {
@@ -27,7 +35,7 @@ struct ImageView: View {
         }
         .onAppear {
             let storage = Storage.storage().reference()
-            storage.child("CCSailboat.jpg").downloadURL{ (url, err) in
+            storage.child("boatPics/46ACE010-CF52-427C-B9B6-C44C71DD5974").downloadURL{ (url, err) in
                 
                 if err != nil {
                     print((err?.localizedDescription)!)
@@ -36,7 +44,6 @@ struct ImageView: View {
                 self.url = "\(url!)"
             }
         }
-        
     }
 }
 struct Loader : UIViewRepresentable {
@@ -47,7 +54,6 @@ struct Loader : UIViewRepresentable {
     }
     func updateUIView(_ uiView: UIActivityIndicatorView, context: UIViewRepresentableContext<Loader>) {
     }
-    
 }
 
 struct ImageView_Previews: PreviewProvider {

@@ -6,7 +6,10 @@
 //  Copyright © 2020 Peter Aurigemma. All rights reserved.
 //
 
-import FirebaseFirestore
+//import FirebaseFirestore
+import SwiftUI
+import SDWebImageSwiftUI
+import Firebase
 
 class BoatPics: FirebaseCodable {
     
