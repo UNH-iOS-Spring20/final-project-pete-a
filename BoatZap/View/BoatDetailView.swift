@@ -17,6 +17,7 @@ struct BoatDetailView: View {
     @ObservedObject var boat: Boat
     @ObservedObject var pics: FirebaseCollection<BoatPics>
     private var boatPicCollectionRef: CollectionReference
+    @State var shown = false
     
     
     init(boat: Boat) {
@@ -26,6 +27,9 @@ struct BoatDetailView: View {
     }
     
     var body: some View {
+        
+        
+        
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
             VStack(alignment: .leading) {
@@ -75,6 +79,20 @@ struct BoatDetailView: View {
                     
                     NavigationLink(destination: EditBoatView(boat: boat)) {
                         Text("Edit Boat Information")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    
+                    Button(action: {
+                        self.shown.toggle()
+                    }) {
+                        Text("Upload Image")
+                    }.sheet(isPresented:$shown) {
+                        imagePicker(shown: self.$shown)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)

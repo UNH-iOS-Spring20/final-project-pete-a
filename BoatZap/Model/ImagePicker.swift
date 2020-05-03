@@ -67,22 +67,18 @@ struct imagePicker : UIViewControllerRepresentable {
             
             let imageName = UUID().uuidString
             let storage = Storage.storage()
+            let imageLink = "boatPics/" + imageName //for firbasedatabase
             let imageRef = storage.reference().child("boatPics/").child(imageName)
-           // let storageRef = storage.reference()
-           // let imagesRef = storageRef.child("boatPics")
-            //var imageRef = imagesRef.child(imageName)
-            
             
             imageRef.putData(image.jpegData(compressionQuality: 0.35)!, metadata: nil){ (_,err) in
                 if err != nil {
                     print((err?.localizedDescription)!)
                     return
                 }
-               // let storageRef = storage.reference()
-               // TODO: put reference in firebase boat pic
                 
                 print("-----------storage reference----------")    //Remove after testing
-               print(imageRef)         //Remove after testing
+                print(imageRef)         //Remove after testing
+                print(imageLink)
                 
                 print("success")
             }
