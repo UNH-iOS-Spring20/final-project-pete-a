@@ -92,7 +92,7 @@ struct BoatDetailView: View {
                     }) {
                         Text("Upload Image")
                     }.sheet(isPresented:$shown) {
-                        imagePicker(shown: self.$shown)
+                        imagePicker(boat: self.boat, shown: self.$shown)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)

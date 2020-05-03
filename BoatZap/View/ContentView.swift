@@ -29,9 +29,9 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
-                    NavigationLink(destination: ImagePicker()) {
-                        Text("ImagePicker")
-                    }
+//                    NavigationLink(destination: ImagePicker()) {
+//                        Text("ImagePicker")
+//                    }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)

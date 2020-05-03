@@ -13,6 +13,7 @@ import FirebaseStorage
 
 struct ImagePicker: View {
     @State var shown = false
+    @ObservedObject var boat: Boat
     
     var body: some View {
         
@@ -21,17 +22,19 @@ struct ImagePicker: View {
         }) {
             Text("Upload Image")
         }.sheet(isPresented:$shown) {
-            imagePicker(shown: self.$shown)
+            imagePicker(boat: self.boat, shown: self.$shown)
         }
     }
 }
 struct ImagePicker_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePicker()
+        ImagePicker(boat: Boat.example)
     }
 }
 
 struct imagePicker : UIViewControllerRepresentable {
+    @ObservedObject var boat: Boat
+    
     func makeCoordinator() -> imagePicker.Coordinator {
         return imagePicker.Coordinator(parent1: self)
     }
@@ -51,9 +54,11 @@ struct imagePicker : UIViewControllerRepresentable {
     
     class Coordinator : NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
         
+      //  @ObservedObject var boat: Boat
+        
         var parent : imagePicker!
-        init (parent1 : imagePicker) {
-            
+        
+        init (parent1 : imagePicker ) {
             parent = parent1
             
         }
@@ -79,6 +84,7 @@ struct imagePicker : UIViewControllerRepresentable {
                 print("-----------storage reference----------")    //Remove after testing
                 print(imageRef)         //Remove after testing
                 print(imageLink)
+               // print(self.boat.id)
                 
                 print("success")
             }
