@@ -25,6 +25,7 @@ struct EditBoatView: View {
                     Text("Boat Name:")
                     .foregroundColor(Color.blue)
                     TextField("Enter Name", text: $boat.name)
+                    .accentColor(.yellow)
                     .padding(3)
                     .background(Color.blue)
                 }
@@ -32,6 +33,7 @@ struct EditBoatView: View {
                     Text("Boat Type:")
                     .foregroundColor(Color.blue)
                     TextField("Enter type", text: $boat.type)
+                    .accentColor(.yellow)
                     .padding(3)
                     .background(Color.blue)
                 }
@@ -39,6 +41,7 @@ struct EditBoatView: View {
                     Text("Boat Make:")
                     .foregroundColor(Color.blue)
                     TextField("Enter Make", text: $boat.make)
+                    .accentColor(.yellow)
                     .padding(3)
                     .background(Color.blue)
                 }
@@ -46,6 +49,7 @@ struct EditBoatView: View {
                     Text("Boat Length:")
                     .foregroundColor(Color.blue)
                     TextField("Enter Length", text: $boat.length)
+                    .accentColor(.yellow)
                     .padding(3)
                     .background(Color.blue)
                 }
@@ -53,6 +57,7 @@ struct EditBoatView: View {
                     Text("Boat Price:")
                     .foregroundColor(Color.blue)
                     TextField("Enter Price", text: $boat.price)
+                   .accentColor(.yellow)
                     .padding(3)
                     .background(Color.blue)
                 }
@@ -60,6 +65,7 @@ struct EditBoatView: View {
                     Text("Boat Address:")
                     .foregroundColor(Color.blue)
                     TextField("Enter Address", text: $boat.address)
+                    .accentColor(.yellow)
                     .padding(3)
                     .background(Color.blue)
                 }

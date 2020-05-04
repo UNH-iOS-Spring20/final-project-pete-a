@@ -19,96 +19,102 @@ struct AddBoatView: View {
     @State private var address = ""
     @State private var latitude = ""
     @State private var longitude = ""
+    //@State private var photo = ""
     
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
-        Group {
-            VStack(spacing: 25) {
-                Text("Add Boat")
-                .font(.largeTitle)
-                .foregroundColor(Color.blue)
+            Group {
                 
-                HStack {
-                    Text("Boat Name:")
-                    .foregroundColor(Color.blue)
+                VStack(spacing: 25) {
+                    CircleImage(image: Image("placeholder"))
+                    Text("Add Boat")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.blue)
+                    
+                    HStack {
+                        Text("Boat Name:")
+                            .foregroundColor(Color.blue)
                         //.padding(3)
-                    TextField("Enter Name", text: $name)
-                    .padding(3)
-                        .background(Color.blue)
+                        TextField("Enter Name", text: $name)
+                            .accentColor(.yellow)
+                            .padding(3)
+                            .background(Color.blue)
                         //.padding(3)
+                    }
+                    HStack {
+                        Text("Boat Type:")
+                            .foregroundColor(Color.blue)
+                        TextField("Boat Type", text: $type)
+                            .accentColor(.yellow)
+                            .padding(3)
+                            .background(Color.blue)
+                    }
+                    HStack {
+                        Text("Boat Make")
+                            .foregroundColor(Color.blue)
+                        TextField("Enter Boat Make", text: $make)
+                            .accentColor(.yellow)
+                            .padding(3)
+                            .background(Color.blue)
+                    }
+                    HStack {
+                        Text("Boat length")
+                            .foregroundColor(Color.blue)
+                        TextField("Enter Boat Length", text: $length)
+                            .accentColor(.yellow)
+                            .padding(3)
+                            .background(Color.blue)
+                    }
+                    HStack {
+                        Text("Asking Price")
+                            .foregroundColor(Color.blue)
+                        TextField("Enter Price", text: $price)
+                            .accentColor(.yellow)
+                            .padding(3)
+                            .background(Color.blue)
+                    }
+                    HStack {
+                        Text("Boat Address")
+                            .foregroundColor(Color.blue)
+                        TextField("Enter Address", text: $address)
+                            .accentColor(.yellow)
+                            .padding(3)
+                            .background(Color.blue)
+                    }
+                    Button(action: {
+                        self.addBoat()
+                    }) {
+                        Text("Add")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(10)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    
                 }
-                HStack {
-                    Text("Boat Type:")
-                    .foregroundColor(Color.blue)
-                    TextField("Boat Type", text: $type)
-                        .padding(3)
-                        .background(Color.blue)
-                        .padding(3)
-                }
-                HStack {
-                    Text("Boat Make")
-                    .foregroundColor(Color.blue)
-                    TextField("Enter Boat Make", text: $make)
-                        .padding(3)
-                        .background(Color.blue)
-                        .padding(3)
-                }
-                HStack {
-                    Text("Boat length")
-                    .foregroundColor(Color.blue)
-                    TextField("Enter Boat Length", text: $length)
-                        .padding(3)
-                        .background(Color.blue)
-                        .padding(3)
-                }
-                HStack {
-                    Text("Asking Price")
-                    .foregroundColor(Color.blue)
-                    TextField("Enter Price", text: $price)
-                        .padding(3)
-                        .background(Color.blue)
-                        .padding(3)
-                }
-                HStack {
-                    Text("Boat Address")
-                    .foregroundColor(Color.blue)
-                    TextField("Enter Address", text: $address)
-                        .padding(3)
-                        .background(Color.blue)
-                        .padding(3)
-                }
-                Button(action: {
-                    self.addBoat()
-                }) {
-                    Text("Add")
-                }
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .foregroundColor(Color.black)
-                .multilineTextAlignment(.center)
-                .padding(10)
-                .background(Color.blue)
-                .cornerRadius(15)
-                
             }
+            .padding()
         }
-        .padding()
-    }
     }
     
     func addBoat() {
         if !name.isEmpty && !make.isEmpty && !type.isEmpty && !length.isEmpty && !price.isEmpty && !address.isEmpty{
+            let photo = String(Int.random(in:1 ..< 6))
             let data = [
-                    "name": name,
-                    "type": type,
-                    "make": make,
-                    "length": length,
-                    "price": price,
-                    "address": address,
-                    "latitude": latitude,
-                    "longitude": longitude
-                    
-                ]
+                "name": name,
+                "type": type,
+                "make": make,
+                "length": length,
+                "price": price,
+                "address": address,
+                "latitude": latitude,
+                "longitude": longitude,
+                "photo": photo,
+                
+            ]
             
             boatsCollectionRef.addDocument(data: data)
             dismiss()

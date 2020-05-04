@@ -18,6 +18,7 @@ struct BoatDetailView: View {
     @ObservedObject var pics: FirebaseCollection<BoatPics>
     private var boatPicCollectionRef: CollectionReference
     @State var shown = false
+    @EnvironmentObject var imageLinkENV : ImageLink
     
     
     init(boat: Boat) {
@@ -29,7 +30,7 @@ struct BoatDetailView: View {
     var body: some View {
         
         
-        
+
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
             VStack(alignment: .leading) {
@@ -93,6 +94,7 @@ struct BoatDetailView: View {
                         Text("Upload Image")
                     }.sheet(isPresented:$shown) {
                         imagePicker(boat: self.boat, shown: self.$shown)
+                        .environmentObject(self.imageLinkENV)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
@@ -138,6 +140,19 @@ struct BoatDetailView: View {
         mapItem.name = self.boat.name
         
         mapItem.openInMaps()
+    }
+    
+    func storeImageURL() {
+        let updatelink = self.imageLinkENV.link
+                                print("--------------------")
+                                print(updatelink)
+        //                        var data = [
+        //                          "url" =  self.imageLinkENV.link
+        //
+        //                          //  "url" = updatelink
+        //                        ]
+        //                        self.boatPicCollectionRef.addDocument(data: data)
+                                //boatsCollectionRef.addDocument(data: data)
     }
 }
 

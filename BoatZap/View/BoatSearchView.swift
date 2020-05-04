@@ -16,6 +16,7 @@ struct BoatSearchView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             Group {
                 VStack {
+                    CircleImage(image: Image("sailboat-race-sea-competition"))
                     Text("Boat List")
                         .font(.largeTitle)
                         .foregroundColor(Color.blue)
@@ -25,7 +26,7 @@ struct BoatSearchView: View {
                     List {
                         ForEach(boats.items) { boat in
                             NavigationLink(destination: BoatDetailView(boat: boat)) {
-                                Text(boat.name)
+                                BoatRowView(boat: boat)
                                     
                                     .foregroundColor(Color.black)
                             }

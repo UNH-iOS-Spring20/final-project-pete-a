@@ -12,14 +12,19 @@ import Firebase
 let boatsCollectionRef = Firestore.firestore().collection("boats")
 
 struct ContentView: View {
+    @EnvironmentObject var  imageLinkENV: ImageLink
+    @State var photoLink = ""
+    
     var body: some View {
         NavigationView {
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all)
+                
                 VStack( spacing: 5) {
                     Text("BoatZap Navagator")
                         .font(.largeTitle)
                         .foregroundColor(Color.blue)
+                    
                     NavigationLink(destination: UserInfoView()) {
                         Text("New Users View")
                     }
@@ -29,15 +34,7 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
-//                    NavigationLink(destination: ImagePicker()) {
-//                        Text("ImagePicker")
-//                    }
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(10)
-                    .background(Color.blue)
-                    .cornerRadius(15)
+                    
                     NavigationLink(destination: CustomSearch()) {
                         Text("Custom Search Bar")
                     }
@@ -47,6 +44,7 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
+                    
                     NavigationLink(destination: SellerHomeView()) {
                         Text("Seller Home View")
                     }
@@ -56,6 +54,7 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
+                    
                     NavigationLink(destination: BuyerHomeView()) {
                         Text("Buyer Home View")
                     }
@@ -65,6 +64,7 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
+                    
                     NavigationLink(destination: AddBoatView()) {
                         Text("Add Boat")
                     }
@@ -74,6 +74,7 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
+                    
                     NavigationLink(destination: BoatSearchView()) {
                         Text("Boat Search")
                     }
@@ -83,15 +84,17 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
-                    NavigationLink(destination: ImageView()) {
-                        Text("Image View")
-                    }
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(10)
-                    .background(Color.blue)
-                    .cornerRadius(15)
+                    
+//                    NavigationLink(destination: ImageView()) {
+//                        Text("Image View")
+//                    }
+//                    .frame(minWidth: 0, maxWidth: .infinity)
+//                    .foregroundColor(Color.black)
+//                    .multilineTextAlignment(.center)
+//                    .padding(10)
+//                    .background(Color.blue)
+//                    .cornerRadius(15)
+                    
                     NavigationLink(destination: CreditView()) {
                         Text("Credits")
                     }
@@ -100,16 +103,11 @@ struct ContentView: View {
                     .multilineTextAlignment(.center)
                     .padding(10)
                     .background(Color.blue)
-                    .cornerRadius(15)
-                    
-                    //Spacer()
+                    .cornerRadius(15) 
                 }
-                //Spacer()
             }
         }
-        
     }
-    //.padding()
 }
 
 struct ContentView_Previews: PreviewProvider {

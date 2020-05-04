@@ -17,6 +17,7 @@ class Boat : FirebaseCodable {
     @Published var address: String
     @Published var latitude: String
     @Published var longitude: String
+    @Published var photo: String
     
     var data: [String: Any] {
         return [
@@ -27,7 +28,8 @@ class Boat : FirebaseCodable {
             "price": price,
             "address": address,
             "latitude": latitude,
-            "longitude": longitude
+            "longitude": longitude,
+            "photo": photo
         ]
     }
     
@@ -39,7 +41,8 @@ class Boat : FirebaseCodable {
             let price = data["price"] as? String,
             let address = data["address"] as? String,
             let latitude = data["latitude"] as? String,
-            let longitude = data["longitude"] as? String
+            let longitude = data["longitude"] as? String,
+            let photo = data["photo"] as? String
             
             else {
                 return nil
@@ -54,6 +57,7 @@ class Boat : FirebaseCodable {
         self.address = address
         self.latitude = latitude
         self.longitude = longitude
+        self.photo = photo
     }
     
     #if DEBUG
@@ -64,7 +68,8 @@ class Boat : FirebaseCodable {
                                               "price": "99,999.98",
                                               "address": "56 State Street",
                                               "latitude": "42.456",
-                                              "longitude": "46.654"
+                                              "longitude": "46.654",
+                                              "photo" : "2"
                                             ])!
     #endif
 }

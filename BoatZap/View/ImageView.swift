@@ -14,13 +14,6 @@ import Firebase
 
 struct ImageView: View {
     
-//
-//    init(_ id: String){
-//    //        // the path to the image
-//            @State var url = "\(id)"
-//    }
-//
-    
     @State var url = ""
     var body: some View {
         

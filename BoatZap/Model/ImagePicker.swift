@@ -10,10 +10,12 @@
 
 import SwiftUI
 import FirebaseStorage
+import Firebase
 
 struct ImagePicker: View {
     @State var shown = false
     @ObservedObject var boat: Boat
+    @EnvironmentObject var  imageLinkENV: ImageLink
     
     var body: some View {
         
@@ -34,8 +36,10 @@ struct ImagePicker_Previews: PreviewProvider {
 
 struct imagePicker : UIViewControllerRepresentable {
     @ObservedObject var boat: Boat
+    @EnvironmentObject var  imageLinkENV: ImageLink
     
     func makeCoordinator() -> imagePicker.Coordinator {
+        
         return imagePicker.Coordinator(parent1: self)
     }
     
@@ -53,9 +57,7 @@ struct imagePicker : UIViewControllerRepresentable {
     }
     
     class Coordinator : NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-        
-      //  @ObservedObject var boat: Boat
-        
+        @EnvironmentObject var  imageLinkENV: ImageLink
         var parent : imagePicker!
         
         init (parent1 : imagePicker ) {
@@ -70,11 +72,12 @@ struct imagePicker : UIViewControllerRepresentable {
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             let image = info[.originalImage] as! UIImage
             
+            
             let imageName = UUID().uuidString
             let storage = Storage.storage()
-            let imageLink = "boatPics/" + imageName //for firbasedatabase
+            let imageLink1 = "boatPics/" + imageName //for firbasedatabase
             let imageRef = storage.reference().child("boatPics/").child(imageName)
-            
+
             imageRef.putData(image.jpegData(compressionQuality: 0.35)!, metadata: nil){ (_,err) in
                 if err != nil {
                     print((err?.localizedDescription)!)
@@ -83,9 +86,8 @@ struct imagePicker : UIViewControllerRepresentable {
                 
                 print("-----------storage reference----------")    //Remove after testing
                 print(imageRef)         //Remove after testing
-                print(imageLink)
-               // print(self.boat.id)
-                
+                print(imageLink1)
+                //ImageLink.updateImageLink(updateLink: imageLink1)
                 print("success")
             }
             parent.shown.toggle()
