@@ -8,9 +8,12 @@
 
 import SwiftUI
 import Firebase
+import UIKit
 
 struct AddBoatView: View {
     @Environment(\.presentationMode) var presentationMode
+    @State private var showingPriceAlert = false
+    
     @State private var name = ""
     @State private var type = ""
     @State private var make = ""
@@ -19,7 +22,6 @@ struct AddBoatView: View {
     @State private var address = ""
     @State private var latitude = ""
     @State private var longitude = ""
-    //@State private var photo = ""
     
     var body: some View {
         ZStack{
@@ -35,12 +37,10 @@ struct AddBoatView: View {
                     HStack {
                         Text("Boat Name:")
                             .foregroundColor(Color.blue)
-                        //.padding(3)
                         TextField("Enter Name", text: $name)
                             .accentColor(.yellow)
                             .padding(3)
                             .background(Color.blue)
-                        //.padding(3)
                     }
                     HStack {
                         Text("Boat Type:")
@@ -93,7 +93,10 @@ struct AddBoatView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
-                    
+                }
+                .alert(isPresented: $showingPriceAlert) {
+                    Alert(title: Text("Error"), message: Text("Price can only contain numbers and one decimal"), dismissButton: .default(Text("OK")) {
+                        })
                 }
             }
             .padding()
@@ -101,23 +104,28 @@ struct AddBoatView: View {
     }
     
     func addBoat() {
-        if !name.isEmpty && !make.isEmpty && !type.isEmpty && !length.isEmpty && !price.isEmpty && !address.isEmpty{
-            let photo = String(Int.random(in:1 ..< 6))
-            let data = [
-                "name": name,
-                "type": type,
-                "make": make,
-                "length": length,
-                "price": price,
-                "address": address,
-                "latitude": latitude,
-                "longitude": longitude,
-                "photo": photo,
-                
-            ]
-            
-            boatsCollectionRef.addDocument(data: data)
-            dismiss()
+    
+        if Double(price) == nil {
+            print("price is NOT a double")
+            self.showingPriceAlert.toggle()
+        } else {
+            print("priceis a double")
+            if !name.isEmpty && !make.isEmpty && !type.isEmpty && !length.isEmpty && !price.isEmpty && !address.isEmpty{
+                let photo = String(Int.random(in:1 ..< 6))
+                let data = [
+                    "name": name,
+                    "type": type,
+                    "make": make,
+                    "length": length,
+                    "price": price,
+                    "address": address,
+                    "latitude": latitude,
+                    "longitude": longitude,
+                    "photo": photo,
+                ]
+                boatsCollectionRef.addDocument(data: data)
+                dismiss()
+            }
         }
     }
     
