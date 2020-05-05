@@ -13,6 +13,8 @@ struct EditBoatView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var showingPriceAlert = false
     
+    
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -56,6 +58,7 @@ struct EditBoatView: View {
                     }
                     HStack {
                         Text("Boat Price:")
+                        //Text(boat.price)
                             .foregroundColor(Color.blue)
                         TextField("Enter Price", text: $boat.price)
                             .accentColor(.yellow)
@@ -72,6 +75,7 @@ struct EditBoatView: View {
                     }
                     
                     Button(action: {
+                        //self.testPrice()
                         self.updateBoat()
                     }) {
                         Text("Save")
@@ -84,19 +88,21 @@ struct EditBoatView: View {
                     .cornerRadius(15)
                     Spacer()
                 }
-                    .alert(isPresented: $showingPriceAlert) {
-                        Alert(title: Text("Error"), message: Text("Price can only contain numbers and one decimal"), dismissButton: .default(Text("OK")) {
-                            })
+                .alert(isPresented: $showingPriceAlert) {
+                    Alert(title: Text("Error"), message: Text("Price can only contain numbers and one decimal"), dismissButton: .default(Text("OK")) {
+                        })
                 }
             }
             .padding()
         }
     }
+    
     func updateBoat() {
         if Double(boat.price) == nil {
             print("price is NOT a double")
             self.showingPriceAlert.toggle()
         } else {
+            
             if !boat.name.isEmpty && !boat.type.isEmpty && !boat.make.isEmpty && !boat.length.isEmpty && !boat.price.isEmpty && !boat.address.isEmpty {
                 boatsCollectionRef.document(boat.id).setData(boat.data)
                 dismiss()
