@@ -32,11 +32,11 @@ struct BoatSearchView: View {
                             }
                         }.onDelete(perform: deleteBoat)
                     }
-                    .colorMultiply(.blue)
                 }
             }
         }
     }
+    
     func deleteBoat(at offsets: IndexSet) {
         let index = offsets.first!
         print("Deleting Boat: \(boats.items[index])")

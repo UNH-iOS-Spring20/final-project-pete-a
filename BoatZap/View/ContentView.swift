@@ -12,6 +12,12 @@ import Firebase
 let boatsCollectionRef = Firestore.firestore().collection("boats")
 
 struct ContentView: View {
+    
+    //    init() {
+    //        UITableView.appearance().backgroundColor = .black // tableview background
+    //        UITableViewCell.appearance().backgroundColor = .black // cell background
+    //    }
+    
     @EnvironmentObject var  imageLinkENV: ImageLink
     @State var photoLink = ""
     
@@ -21,52 +27,22 @@ struct ContentView: View {
                 Color.black.edgesIgnoringSafeArea(.all)
                 
                 VStack( spacing: 5) {
-                    Text("BoatZap Navagator")
-                        .font(.largeTitle)
-                        .foregroundColor(Color.blue)
-                    
-                    NavigationLink(destination: UserInfoView()) {
-                        Text("New Users View")
+                    VStack ( spacing: 30){
+                        
+                        
+                        Text("BoatZap Navagator")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.blue)
+                        CircleImage(image: Image("FrontPageBoat"))
+                        Divider()
                     }
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(10)
-                    .background(Color.blue)
-                    .cornerRadius(15)
-                    
-                    NavigationLink(destination: CustomSearch()) {
-                        Text("Custom Search Bar")
-                    }
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(10)
-                    .background(Color.blue)
-                    .cornerRadius(15)
-                    
-                    NavigationLink(destination: SellerHomeView()) {
-                        Text("Seller Home View")
-                    }
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(10)
-                    .background(Color.blue)
-                    .cornerRadius(15)
-                    
-                    NavigationLink(destination: BuyerHomeView()) {
-                        Text("Buyer Home View")
-                    }
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(10)
-                    .background(Color.blue)
-                    .cornerRadius(15)
-                    
                     NavigationLink(destination: AddBoatView()) {
-                        Text("Add Boat")
+                        HStack{
+                            Image(systemName: "plus.rectangle.fill")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            Text("Add Boat")
+                        }
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
@@ -76,7 +52,12 @@ struct ContentView: View {
                     .cornerRadius(15)
                     
                     NavigationLink(destination: BoatSearchView()) {
-                        Text("Boat Search")
+                        HStack{
+                            Image("boat")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            Text("Boat Search")
+                        }
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
@@ -85,26 +66,21 @@ struct ContentView: View {
                     .background(Color.blue)
                     .cornerRadius(15)
                     
-//                    NavigationLink(destination: ImageView()) {
-//                        Text("Image View")
-//                    }
-//                    .frame(minWidth: 0, maxWidth: .infinity)
-//                    .foregroundColor(Color.black)
-//                    .multilineTextAlignment(.center)
-//                    .padding(10)
-//                    .background(Color.blue)
-//                    .cornerRadius(15)
-                    
                     NavigationLink(destination: CreditView()) {
-                        Text("Credits")
+                        HStack{
+                            Image(systemName: "info.circle.fill")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            Text("Credits")
+                        }
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
                     .padding(10)
                     .background(Color.blue)
-                    .cornerRadius(15) 
-                }
+                    .cornerRadius(15)
+                }  
             }
         }
     }

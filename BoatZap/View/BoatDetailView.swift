@@ -30,7 +30,7 @@ struct BoatDetailView: View {
     var body: some View {
         
         
-
+        
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
             VStack(alignment: .leading) {
@@ -68,7 +68,12 @@ struct BoatDetailView: View {
                         Button(action: {
                             self.navagateToBoat()
                         }) {
-                            Text("Navagate to boat")
+                            HStack{
+                                Image(systemName: "location")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                Text("Navagate to boat")
+                            }
                         }
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .foregroundColor(Color.black)
@@ -79,7 +84,13 @@ struct BoatDetailView: View {
                     }
                     
                     NavigationLink(destination: EditBoatView(boat: boat)) {
-                        Text("Edit Boat Information")
+                        HStack{
+                            Image("paper-and-pen-tools")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            
+                            Text("Edit Boat Information")
+                        }
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
@@ -91,10 +102,15 @@ struct BoatDetailView: View {
                     Button(action: {
                         self.shown.toggle()
                     }) {
+                        HStack{
+                            Image(systemName: "icloud.and.arrow.up")
+                            .resizable()
+                            .frame(width: 30, height: 30)
                         Text("Upload Image")
+                        }
                     }.sheet(isPresented:$shown) {
                         imagePicker(boat: self.boat, shown: self.$shown)
-                        .environmentObject(self.imageLinkENV)
+                            .environmentObject(self.imageLinkENV)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
@@ -104,7 +120,12 @@ struct BoatDetailView: View {
                     .cornerRadius(15)
                     
                     NavigationLink(destination: SetBoatLocationView(boat: boat)) {
+                        HStack{
+                            Image("big-anchor")
+                            .resizable()
+                            .frame(width: 30, height: 30)
                         Text("Update Boat Location")
+                        }
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
@@ -140,19 +161,6 @@ struct BoatDetailView: View {
         mapItem.name = self.boat.name
         
         mapItem.openInMaps()
-    }
-    
-    func storeImageURL() {
-        let updatelink = self.imageLinkENV.link
-                                print("--------------------")
-                                print(updatelink)
-        //                        var data = [
-        //                          "url" =  self.imageLinkENV.link
-        //
-        //                          //  "url" = updatelink
-        //                        ]
-        //                        self.boatPicCollectionRef.addDocument(data: data)
-                                //boatsCollectionRef.addDocument(data: data)
     }
 }
 

@@ -18,26 +18,27 @@ struct BoatPicDetailView: View {
     
     var body: some View {
         
-        VStack{
-            if url != ""{
-                AnimatedImage(url: URL(string: url)!).resizable()
-                    //.aspectRatio(contentMode: .fill)//
-                    .frame(height: 400).padding().cornerRadius(25).padding()
-            }
-            else{
-                DetailLoader()
-            }
-            
-        }
-        .onAppear {
-            let storage = Storage.storage().reference()
-            storage.child(self.boatPic.url).downloadURL{ (url, err) in
-                
-                if err != nil {
-                    print((err?.localizedDescription)!)
-                    return
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all)
+            VStack{
+                if url != ""{
+                    AnimatedImage(url: URL(string: url)!).resizable()
+                        .frame(height: 400).padding().cornerRadius(25).padding()
                 }
-                self.url = "\(url!)"
+                else{
+                    DetailLoader()
+                }
+            }
+            .onAppear {
+                let storage = Storage.storage().reference()
+                storage.child(self.boatPic.url).downloadURL{ (url, err) in
+                    
+                    if err != nil {
+                        print((err?.localizedDescription)!)
+                        return
+                    }
+                    self.url = "\(url!)"
+                }
             }
         }
     }
