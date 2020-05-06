@@ -14,8 +14,11 @@ import Firebase
 
 struct ImagePicker: View {
     @State var shown = false
+   // @State var imageRefLink = ""
     @ObservedObject var boat: Boat
-    @EnvironmentObject var  imageLinkENV: ImageLink
+    var boatPicCollectionRef: CollectionReference
+    //var boatPic : BoatPics
+   // @EnvironmentObject var  imageLinkENV: ImageLink
     
     var body: some View {
         
@@ -24,19 +27,21 @@ struct ImagePicker: View {
         }) {
             Text("Upload Image")
         }.sheet(isPresented:$shown) {
-            imagePicker(boat: self.boat, shown: self.$shown)
+            imagePicker(boat: self.boat, boatPicCollectionRef: self.boatPicCollectionRef, shown: self.$shown)
         }
     }
 }
 struct ImagePicker_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePicker(boat: Boat.example)
+        ImagePicker(boat: Boat.example, boatPicCollectionRef: boatsCollectionRef.document("3OuCCmIImdz31zre0taa").collection("pictures"))
     }
 }
 
 struct imagePicker : UIViewControllerRepresentable {
     @ObservedObject var boat: Boat
-    @EnvironmentObject var  imageLinkENV: ImageLink
+    //@ObservedObject var boatPic: BoatPics
+    var boatPicCollectionRef: CollectionReference
+    //@EnvironmentObject var  imageLinkENV: ImageLink
     
     func makeCoordinator() -> imagePicker.Coordinator {
         
@@ -44,6 +49,7 @@ struct imagePicker : UIViewControllerRepresentable {
     }
     
     @Binding var shown : Bool
+    //@Binding var imageRefLink : String
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<imagePicker>) -> UIImagePickerController {
         
@@ -87,7 +93,9 @@ struct imagePicker : UIViewControllerRepresentable {
                 print("-----------storage reference----------")    //Remove after testing
                 print(imageRef)         //Remove after testing
                 print(imageLink1)
-                //ImageLink.updateImageLink(updateLink: imageLink1)
+                let data = ["url" : imageLink1]
+                self.parent.boatPicCollectionRef.addDocument(data: data)//self.parent.imageRefLink = imageLink1
+                //self.parent.boat.
                 print("success")
             }
             parent.shown.toggle()

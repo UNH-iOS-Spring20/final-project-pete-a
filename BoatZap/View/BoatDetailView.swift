@@ -16,9 +16,9 @@ struct BoatDetailView: View {
     
     @ObservedObject var boat: Boat
     @ObservedObject var pics: FirebaseCollection<BoatPics>
-    private var boatPicCollectionRef: CollectionReference
+    var boatPicCollectionRef: CollectionReference
     @State var shown = false
-    @EnvironmentObject var imageLinkENV : ImageLink
+    //@EnvironmentObject var imageLinkENV : ImageLink
     
     
     init(boat: Boat) {
@@ -28,8 +28,6 @@ struct BoatDetailView: View {
     }
     
     var body: some View {
-        
-        
         
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -109,8 +107,7 @@ struct BoatDetailView: View {
                         Text("Upload Image")
                         }
                     }.sheet(isPresented:$shown) {
-                        imagePicker(boat: self.boat, shown: self.$shown)
-                            .environmentObject(self.imageLinkENV)
+                        imagePicker(boat: self.boat, boatPicCollectionRef: self.boatPicCollectionRef,  shown: self.$shown)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(Color.black)
