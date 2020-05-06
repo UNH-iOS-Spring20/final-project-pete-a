@@ -19,8 +19,6 @@ struct BoatDetailView: View {
     var boatPicCollectionRef: CollectionReference
     @State var shown = false
     
-    
-    
     init(boat: Boat) {
         self.boat = boat
         self.boatPicCollectionRef = boatsCollectionRef.document(boat.id).collection("pictures")
@@ -136,6 +134,8 @@ struct BoatDetailView: View {
                             NavigationLink(destination: BoatPicDetailView(boatPic: boatPic, boat: self.boat)) {
                                 BoatPicRow(boatPic: boatPic)
                             }
+                        .frame( height: 100)
+                        //.fixedSize(horizontal: 30, vertical: 30 )
                         }
                     }
                 }
@@ -145,7 +145,6 @@ struct BoatDetailView: View {
     func oldPriceCopy() { // Deep copy the old price to a separate structure so we can compare old price and new price.
         Variables.oldPrice = boat.price.copy() as! String
     }
-    
     
     func navagateToBoat() {
         
