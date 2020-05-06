@@ -18,7 +18,7 @@ struct BoatDetailView: View {
     @ObservedObject var pics: FirebaseCollection<BoatPics>
     var boatPicCollectionRef: CollectionReference
     @State var shown = false
-    //@EnvironmentObject var imageLinkENV : ImageLink
+    
     
     
     init(boat: Boat) {
@@ -81,7 +81,7 @@ struct BoatDetailView: View {
                         .cornerRadius(15)
                     }
                     
-                    NavigationLink(destination: EditBoatView(boat: boat)) {
+                    NavigationLink(destination: EditBoatView(boat: boat).onAppear(){self.oldPriceCopy()}) {
                         HStack{
                             Image("paper-and-pen-tools")
                                 .resizable()
@@ -142,6 +142,11 @@ struct BoatDetailView: View {
             }.frame(width: 400, height: 800, alignment: .topLeading)
         }
     }
+    func oldPriceCopy() { // Deep copy the old price to a separate structure so we can compare old price and new price.
+        Variables.oldPrice = boat.price.copy() as! String
+    }
+    
+    
     func navagateToBoat() {
         
         let latDouble = (NumberFormatter().number(from: boat.latitude)?.doubleValue)!

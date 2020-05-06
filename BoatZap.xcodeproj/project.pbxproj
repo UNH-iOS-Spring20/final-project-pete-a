@@ -72,6 +72,9 @@
 		0FF3C73D2460CEA500BF103B /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C73C2460CEA500BF103B /* AppTabView.swift */; };
 		0FF3C73E2460CEA500BF103B /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C73C2460CEA500BF103B /* AppTabView.swift */; };
 		0FF3C73F2460CEA500BF103B /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C73C2460CEA500BF103B /* AppTabView.swift */; };
+		0FF3C7412462658700BF103B /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C7402462658600BF103B /* Variables.swift */; };
+		0FF3C7422462658700BF103B /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C7402462658600BF103B /* Variables.swift */; };
+		0FF3C7432462658700BF103B /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C7402462658600BF103B /* Variables.swift */; };
 		0FFDE5012442617100C43AE3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F279B16243EB657001A409D /* MapView.swift */; };
 		0FFDE5032445544500C43AE3 /* LocaionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5022445544500C43AE3 /* LocaionsManager.swift */; };
 		0FFDE5052445550200C43AE3 /* LocationDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */; };
@@ -141,6 +144,7 @@
 		0FF3C734245FB6F200BF103B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		0FF3C738245FBD0800BF103B /* BoatRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatRowView.swift; sourceTree = "<group>"; };
 		0FF3C73C2460CEA500BF103B /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		0FF3C7402462658600BF103B /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		0FFDE5022445544500C43AE3 /* LocaionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaionsManager.swift; sourceTree = "<group>"; };
 		0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataTestView.swift; sourceTree = "<group>"; };
 		17980801E2FF72572297A204 /* Pods-BoatZap-BoatZapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap-BoatZapUITests.release.xcconfig"; path = "Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 				0FF3C711245A546700BF103B /* ImagePicker.swift */,
 				0FF3C715245E3C0200BF103B /* BoatPics.swift */,
 				0FF3C730245F626100BF103B /* ImageLink.swift */,
+				0FF3C7402462658600BF103B /* Variables.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -623,6 +628,7 @@
 				0FF3C71E245E46C500BF103B /* BoatPicRow.swift in Sources */,
 				0FBFE427240F58B50071C70D /* HomeView.swift in Sources */,
 				0FBFE42B240F5A780071C70D /* Profile.swift in Sources */,
+				0FF3C7412462658700BF103B /* Variables.swift in Sources */,
 				0FBFE4332410A6F40071C70D /* BuyerHomeView.swift in Sources */,
 				0FF3C712245A546700BF103B /* ImagePicker.swift in Sources */,
 				0FF3C716245E3C0200BF103B /* BoatPics.swift in Sources */,
@@ -647,6 +653,7 @@
 				0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */,
 				0FBFE42C240F5A780071C70D /* Profile.swift in Sources */,
 				0FF3C71B245E438C00BF103B /* BoatPicDetailView.swift in Sources */,
+				0FF3C7422462658700BF103B /* Variables.swift in Sources */,
 				0FF3C736245FB6F200BF103B /* CircleImage.swift in Sources */,
 				0FF3C732245F626100BF103B /* ImageLink.swift in Sources */,
 				0FF3C723245E4A3B00BF103B /* FirebaseImage.swift in Sources */,
@@ -675,6 +682,7 @@
 				0FF3C737245FB6F200BF103B /* CircleImage.swift in Sources */,
 				0FF3C718245E3C0200BF103B /* BoatPics.swift in Sources */,
 				0FF3C714245A546700BF103B /* ImagePicker.swift in Sources */,
+				0FF3C7432462658700BF103B /* Variables.swift in Sources */,
 				0FF3C73B245FBD0800BF103B /* BoatRowView.swift in Sources */,
 				0FF3C720245E46C500BF103B /* BoatPicRow.swift in Sources */,
 				0FF3C710244FE83700BF103B /* CustomSearch.swift in Sources */,

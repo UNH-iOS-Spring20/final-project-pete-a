@@ -14,7 +14,6 @@ struct EditBoatView: View {
     @State private var showingPriceAlert = false
     
     
-    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -58,7 +57,6 @@ struct EditBoatView: View {
                     }
                     HStack {
                         Text("Boat Price:")
-                        //Text(boat.price)
                             .foregroundColor(Color.blue)
                         TextField("Enter Price", text: $boat.price)
                             .accentColor(.yellow)
@@ -75,7 +73,6 @@ struct EditBoatView: View {
                     }
                     
                     Button(action: {
-                        //self.testPrice()
                         self.updateBoat()
                     }) {
                         Text("Save")
@@ -98,17 +95,46 @@ struct EditBoatView: View {
     }
     
     func updateBoat() {
+        
         if Double(boat.price) == nil {
             print("price is NOT a double")
             self.showingPriceAlert.toggle()
-        } else {
+        }
+        else {
+            if (Double(Variables.oldPrice) !=  Double(boat.price)){
+                print("***** Price changed from \(Variables.oldPrice) to \(boat.price)")
+            }
+            else {
+                print("***** No price change ")
+            }
             
             if !boat.name.isEmpty && !boat.type.isEmpty && !boat.make.isEmpty && !boat.length.isEmpty && !boat.price.isEmpty && !boat.address.isEmpty {
                 boatsCollectionRef.document(boat.id).setData(boat.data)
+                
+                showNotification()
+                
                 dismiss()
             }
         }
     }
+    func showNotification() {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Boat \(boat.name) Price Changed"
+        content.subtitle = "from $\(Variables.oldPrice) to $\(boat.price)"
+        content.sound = UNNotificationSound.default
+        
+        // show this notification five seconds from now
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        // choose a random identifier
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        // add our notification request
+        UNUserNotificationCenter.current().add(request)
+    }
+    
+    
     func dismiss() {
         presentationMode.wrappedValue.dismiss()
     }
