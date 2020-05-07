@@ -19,7 +19,7 @@ class BoatZapTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-//------ BoatItem Class Tests ------
+//------ Boat Class Tests ------
 func testBoatInitSucceeds() {
     let littleBoatItem = Boat.init( id: "1", data: ["name" : "Row Boat", "type" : "Power" , "make" : "Hinckley", "length": "8", "price" : "1199.99" ,"address" : "123 School Rd. Essex, CT","latitude": "42.234","longitude": "43.234", "photo" :"boatPics/CCSailboat.jpg"])
     XCTAssertNotNil(littleBoatItem)

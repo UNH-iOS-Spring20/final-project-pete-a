@@ -13,11 +13,6 @@ let boatsCollectionRef = Firestore.firestore().collection("boats")
 
 struct ContentView: View {
     
-    //    init() {
-    //        UITableView.appearance().backgroundColor = .black // tableview background
-    //        UITableViewCell.appearance().backgroundColor = .black // cell background
-    //    }
-    
     @EnvironmentObject var  imageLinkENV: ImageLink
     @State var photoLink = ""
     

@@ -28,7 +28,7 @@ struct BoatSearchView: View {
                             NavigationLink(destination: BoatDetailView(boat: boat)) {
                                 BoatRowView(boat: boat)
                                     
-                                    .foregroundColor(Color.black)
+                                    .foregroundColor(Color.blue)
                             }
                         }.onDelete(perform: deleteBoat)
                     }
