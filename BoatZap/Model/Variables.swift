@@ -8,5 +8,6 @@
 
 
 struct Variables {
-    static var oldPrice = "0"
+    static var oldPrice = "0" //used for price varification
+    static var alertText = "Default Alert" //alert used for choosing multiple alerts
 }

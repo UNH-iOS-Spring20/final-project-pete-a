@@ -12,7 +12,7 @@ import UIKit
 
 struct AddBoatView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var showingPriceAlert = false
+    @State private var showingAlert = false
     
     @State private var name = ""
     @State private var type = ""
@@ -94,9 +94,8 @@ struct AddBoatView: View {
                     .background(Color.blue)
                     .cornerRadius(15)
                 }
-                .alert(isPresented: $showingPriceAlert) {
-                    Alert(title: Text("Error"), message: Text("Price can only contain numbers and one decimal"), dismissButton: .default(Text("OK")) {
-                        })
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("Error"), message: Text(Variables.alertText), dismissButton: .default(Text("OK")))
                 }
             }
             .padding()
@@ -104,12 +103,13 @@ struct AddBoatView: View {
     }
     
     func addBoat() {
-    
+        
         if Double(price) == nil {
             print("price is NOT a double")
-            self.showingPriceAlert.toggle()
+            Variables.alertText = "The selling price can only contain numbers and one decimal point"
+            self.showingAlert.toggle()
         } else {
-            print("priceis a double")
+            print("price is a double")
             if !name.isEmpty && !make.isEmpty && !type.isEmpty && !length.isEmpty && !price.isEmpty && !address.isEmpty{
                 let photo = String(Int.random(in:1 ..< 6))
                 let data = [
@@ -125,6 +125,9 @@ struct AddBoatView: View {
                 ]
                 boatsCollectionRef.addDocument(data: data)
                 dismiss()
+            } else {
+                Variables.alertText = "All Fields must be filled in to list the boat"
+                self.showingAlert.toggle()
             }
         }
     }

@@ -11,7 +11,7 @@ import SwiftUI
 struct EditBoatView: View {
     @ObservedObject var boat: Boat
     @Environment(\.presentationMode) var presentationMode
-    @State private var showingPriceAlert = false
+    @State private var showingAlert = false
     
     
     var body: some View {
@@ -85,9 +85,8 @@ struct EditBoatView: View {
                     .cornerRadius(15)
                     Spacer()
                 }
-                .alert(isPresented: $showingPriceAlert) {
-                    Alert(title: Text("Error"), message: Text("Price can only contain numbers and one decimal"), dismissButton: .default(Text("OK")) {
-                        })
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("Error"), message: Text(Variables.alertText), dismissButton: .default(Text("OK")))
                 }
             }
             .padding()
@@ -98,7 +97,8 @@ struct EditBoatView: View {
         
         if Double(boat.price) == nil {
             print("price is NOT a double")
-            self.showingPriceAlert.toggle()
+            Variables.alertText = "The selling price can only contain numbers and one decimal point"
+            self.showingAlert.toggle()
         }
         else {
             if (Double(Variables.oldPrice) !=  Double(boat.price)){
@@ -114,9 +114,13 @@ struct EditBoatView: View {
                 showNotification()
                 
                 dismiss()
+            } else {
+                Variables.alertText = "All Fields must be filled in to save"
+                self.showingAlert.toggle()
             }
         }
     }
+    
     func showNotification() {
         
         let content = UNMutableNotificationContent()
@@ -124,13 +128,9 @@ struct EditBoatView: View {
         content.subtitle = "from $\(Variables.oldPrice) to $\(boat.price)"
         content.sound = UNNotificationSound.default
         
-        // show this notification five seconds from now
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        
-        // choose a random identifier
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        
-        // add our notification request
+
         UNUserNotificationCenter.current().add(request)
     }
     

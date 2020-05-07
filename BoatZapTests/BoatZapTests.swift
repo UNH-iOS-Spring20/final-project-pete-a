@@ -20,14 +20,14 @@ class BoatZapTests: XCTestCase {
     }
 
 //------ BoatItem Class Tests ------
-func testBoatItemInitSucceeds() {
+func testBoatInitSucceeds() {
     let littleBoatItem = Boat.init( id: "1", data: ["name" : "Row Boat", "type" : "Power" , "make" : "Hinckley", "length": "8", "price" : "1199.99" ,"address" : "123 School Rd. Essex, CT","latitude": "42.234","longitude": "43.234", "photo" :"boatPics/CCSailboat.jpg"])
     XCTAssertNotNil(littleBoatItem)
     let bigBoatItem = Boat.init( id: "1", data: ["name" : "Island", "type" : "Power" , "make" : "SunSeeker", "length": "280", "price" : "6001199.99" ,"address" : "12 school St. New Haven, CT" , "latitude": "42.124","longitude": "41.234", "photo" :"boatPics/CCSailboat.jpg"])
     XCTAssertNotNil(bigBoatItem)
 }
    
-    func testBoatItemInitFails() {
+    func testBoatInitFails() {
             // Item with no make
         let noMakeItem = Boat.init(id: "1", data: ["name" : "Usain Boat", "type" : "Power" , "length": "40", "price" : "400000.99" ,"address" : "1123 High St. New Haven, CT" , "latitude": "42.124", "longitude": "41.234", "photo" :"boatPics/CCSailboat.jpg"])
             XCTAssertNil(noMakeItem)
