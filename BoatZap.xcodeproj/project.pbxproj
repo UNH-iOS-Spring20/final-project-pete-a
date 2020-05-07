@@ -28,11 +28,9 @@
 		0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
 		0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
 		0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
-		0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
 		0FBFE427240F58B50071C70D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
 		0FBFE42B240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
 		0FBFE42C240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
-		0FBFE42D240F5A780071C70D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42A240F5A780071C70D /* Profile.swift */; };
 		0FBFE42F2410A1DA0071C70D /* SellerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */; };
 		0FBFE4332410A6F40071C70D /* BuyerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */; };
 		0FD1842923FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
@@ -40,41 +38,45 @@
 		0FD1842B23FF6548008A0F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD1842823FF6548008A0F5A /* GoogleService-Info.plist */; };
 		0FF3C70E244FE83700BF103B /* CustomSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C70D244FE83700BF103B /* CustomSearch.swift */; };
 		0FF3C70F244FE83700BF103B /* CustomSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C70D244FE83700BF103B /* CustomSearch.swift */; };
-		0FF3C710244FE83700BF103B /* CustomSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C70D244FE83700BF103B /* CustomSearch.swift */; };
 		0FF3C712245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
 		0FF3C713245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
-		0FF3C714245A546700BF103B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C711245A546700BF103B /* ImagePicker.swift */; };
 		0FF3C716245E3C0200BF103B /* BoatPics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C715245E3C0200BF103B /* BoatPics.swift */; };
 		0FF3C717245E3C0200BF103B /* BoatPics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C715245E3C0200BF103B /* BoatPics.swift */; };
-		0FF3C718245E3C0200BF103B /* BoatPics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C715245E3C0200BF103B /* BoatPics.swift */; };
 		0FF3C71A245E438C00BF103B /* BoatPicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */; };
 		0FF3C71B245E438C00BF103B /* BoatPicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */; };
-		0FF3C71C245E438C00BF103B /* BoatPicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */; };
 		0FF3C71E245E46C500BF103B /* BoatPicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C71D245E46C500BF103B /* BoatPicRow.swift */; };
 		0FF3C71F245E46C500BF103B /* BoatPicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C71D245E46C500BF103B /* BoatPicRow.swift */; };
-		0FF3C720245E46C500BF103B /* BoatPicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C71D245E46C500BF103B /* BoatPicRow.swift */; };
 		0FF3C722245E4A3B00BF103B /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */; };
 		0FF3C723245E4A3B00BF103B /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */; };
-		0FF3C724245E4A3B00BF103B /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */; };
 		0FF3C72B245E954B00BF103B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0FF3C72A245E954B00BF103B /* SDWebImageSwiftUI */; };
 		0FF3C72D245E976400BF103B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C72C245E976400BF103B /* ImageView.swift */; };
 		0FF3C72E245E976400BF103B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C72C245E976400BF103B /* ImageView.swift */; };
-		0FF3C72F245E976400BF103B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C72C245E976400BF103B /* ImageView.swift */; };
 		0FF3C731245F626100BF103B /* ImageLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C730245F626100BF103B /* ImageLink.swift */; };
 		0FF3C732245F626100BF103B /* ImageLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C730245F626100BF103B /* ImageLink.swift */; };
-		0FF3C733245F626100BF103B /* ImageLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C730245F626100BF103B /* ImageLink.swift */; };
 		0FF3C735245FB6F200BF103B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C734245FB6F200BF103B /* CircleImage.swift */; };
 		0FF3C736245FB6F200BF103B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C734245FB6F200BF103B /* CircleImage.swift */; };
-		0FF3C737245FB6F200BF103B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C734245FB6F200BF103B /* CircleImage.swift */; };
 		0FF3C739245FBD0800BF103B /* BoatRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C738245FBD0800BF103B /* BoatRowView.swift */; };
 		0FF3C73A245FBD0800BF103B /* BoatRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C738245FBD0800BF103B /* BoatRowView.swift */; };
-		0FF3C73B245FBD0800BF103B /* BoatRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C738245FBD0800BF103B /* BoatRowView.swift */; };
 		0FF3C73D2460CEA500BF103B /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C73C2460CEA500BF103B /* AppTabView.swift */; };
 		0FF3C73E2460CEA500BF103B /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C73C2460CEA500BF103B /* AppTabView.swift */; };
-		0FF3C73F2460CEA500BF103B /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C73C2460CEA500BF103B /* AppTabView.swift */; };
 		0FF3C7412462658700BF103B /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C7402462658600BF103B /* Variables.swift */; };
 		0FF3C7422462658700BF103B /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C7402462658600BF103B /* Variables.swift */; };
-		0FF3C7432462658700BF103B /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C7402462658600BF103B /* Variables.swift */; };
+		0FF3C77B2463AB7300BF103B /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A2150241F1E9800F608C5 /* Boat.swift */; };
+		0FF3C77C2463AB7700BF103B /* LocaionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5022445544500C43AE3 /* LocaionsManager.swift */; };
+		0FF3C77D2463AB8C00BF103B /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
+		0FF3C77E2463AB9000BF103B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AF23FB03D900B765F3 /* ContentView.swift */; };
+		0FF3C77F2463AB9300BF103B /* BuyerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */; };
+		0FF3C7802463AB9700BF103B /* SellerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */; };
+		0FF3C7812463AB9900BF103B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
+		0FF3C7822463AB9C00BF103B /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A2152241F2C9F00F608C5 /* CreditView.swift */; };
+		0FF3C7832463AB9F00BF103B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71850F242C641600A077C9 /* SignInView.swift */; };
+		0FF3C7842463ABA200BF103B /* SetBoatLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F718511242C6EFD00A077C9 /* SetBoatLocationView.swift */; };
+		0FF3C7852463ABA600BF103B /* AddBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185182432E96700A077C9 /* AddBoatView.swift */; };
+		0FF3C7862463ABAA00BF103B /* BoatSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71851C243434D200A077C9 /* BoatSearchView.swift */; };
+		0FF3C7872463ABAD00BF103B /* BoatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185202434386000A077C9 /* BoatDetailView.swift */; };
+		0FF3C7882463ABB100BF103B /* EditBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185242434422600A077C9 /* EditBoatView.swift */; };
+		0FF3C7892463ABB400BF103B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F279B16243EB657001A409D /* MapView.swift */; };
+		0FF3C78A2463ABB700BF103B /* LocationDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */; };
 		0FFDE5012442617100C43AE3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F279B16243EB657001A409D /* MapView.swift */; };
 		0FFDE5032445544500C43AE3 /* LocaionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5022445544500C43AE3 /* LocaionsManager.swift */; };
 		0FFDE5052445550200C43AE3 /* LocationDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */; };
@@ -650,21 +652,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF3C7802463AB9700BF103B /* SellerHomeView.swift in Sources */,
+				0FF3C7822463AB9C00BF103B /* CreditView.swift in Sources */,
 				0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */,
+				0FF3C78A2463ABB700BF103B /* LocationDataTestView.swift in Sources */,
 				0FBFE42C240F5A780071C70D /* Profile.swift in Sources */,
+				0FF3C7852463ABA600BF103B /* AddBoatView.swift in Sources */,
 				0FF3C71B245E438C00BF103B /* BoatPicDetailView.swift in Sources */,
 				0FF3C7422462658700BF103B /* Variables.swift in Sources */,
 				0FF3C736245FB6F200BF103B /* CircleImage.swift in Sources */,
 				0FF3C732245F626100BF103B /* ImageLink.swift in Sources */,
+				0FF3C77E2463AB9000BF103B /* ContentView.swift in Sources */,
+				0FF3C7892463ABB400BF103B /* MapView.swift in Sources */,
+				0FF3C7832463AB9F00BF103B /* SignInView.swift in Sources */,
+				0FF3C7872463ABAD00BF103B /* BoatDetailView.swift in Sources */,
+				0FF3C7882463ABB100BF103B /* EditBoatView.swift in Sources */,
 				0FF3C723245E4A3B00BF103B /* FirebaseImage.swift in Sources */,
 				0FF3C72E245E976400BF103B /* ImageView.swift in Sources */,
 				0FF3C70F244FE83700BF103B /* CustomSearch.swift in Sources */,
+				0FF3C7862463ABAA00BF103B /* BoatSearchView.swift in Sources */,
 				0FF3C713245A546700BF103B /* ImagePicker.swift in Sources */,
+				0FF3C7842463ABA200BF103B /* SetBoatLocationView.swift in Sources */,
 				0FF3C73E2460CEA500BF103B /* AppTabView.swift in Sources */,
 				0FF3C73A245FBD0800BF103B /* BoatRowView.swift in Sources */,
+				0FF3C77B2463AB7300BF103B /* Boat.swift in Sources */,
+				0FF3C77C2463AB7700BF103B /* LocaionsManager.swift in Sources */,
+				0FF3C77F2463AB9300BF103B /* BuyerHomeView.swift in Sources */,
 				0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */,
 				0FF3C717245E3C0200BF103B /* BoatPics.swift in Sources */,
+				0FF3C77D2463AB8C00BF103B /* UserInfoView.swift in Sources */,
+				0FF3C7812463AB9900BF103B /* HomeView.swift in Sources */,
 				0FF3C71F245E46C500BF103B /* BoatPicRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,21 +691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF3C72F245E976400BF103B /* ImageView.swift in Sources */,
-				0FBFE42D240F5A780071C70D /* Profile.swift in Sources */,
-				0FF3C733245F626100BF103B /* ImageLink.swift in Sources */,
-				0FBFE425240F585D0071C70D /* ProfileHost.swift in Sources */,
-				0FF3C73F2460CEA500BF103B /* AppTabView.swift in Sources */,
-				0FF3C71C245E438C00BF103B /* BoatPicDetailView.swift in Sources */,
-				0FF3C737245FB6F200BF103B /* CircleImage.swift in Sources */,
-				0FF3C718245E3C0200BF103B /* BoatPics.swift in Sources */,
-				0FF3C714245A546700BF103B /* ImagePicker.swift in Sources */,
-				0FF3C7432462658700BF103B /* Variables.swift in Sources */,
-				0FF3C73B245FBD0800BF103B /* BoatRowView.swift in Sources */,
-				0FF3C720245E46C500BF103B /* BoatPicRow.swift in Sources */,
-				0FF3C710244FE83700BF103B /* CustomSearch.swift in Sources */,
 				0F4645CE23FB03DA00B765F3 /* BoatZapUITests.swift in Sources */,
-				0FF3C724245E4A3B00BF103B /* FirebaseImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

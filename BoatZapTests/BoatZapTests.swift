@@ -19,25 +19,22 @@ class BoatZapTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-//    //------ BoatItem Class Tests ------
-//    func testBoatItemInitSucceeds() {
-//        let littleBoatItem = BoatItem.init(name: "Row Boat", type: "Power" , make: "Hinckley", length: 8, currentPrice: 1199.99)
-//        XCTAssertNotNil(littleBoatItem)
-//        let bigBoatItem = BoatItem.init(name: "Island", type: "Power" , make: "Sun Seeker", length: 230, currentPrice: 60000000.00)
-//        XCTAssertNotNil(bigBoatItem)
-//    }
-//    
-//    func testBoatItemInitFails() {
-//            // Item with no make
-//        let noMakeItem = BoatItem.init(name: "Kids Inheritance", type: "Power" , make: "", length: 60, currentPrice: 150000.00)
-//            XCTAssertNil(noMakeItem)
-//        // Item with negative price
-//        let negPriceItem = BoatItem.init(name: "Usain Boat", type: "Power" , make: "C&C", length: 40, currentPrice: -100000.00)
-//            XCTAssertNil(negPriceItem)
-//        // Item with 0 lenth
-//        let zeroLenthItem = BoatItem.init(name: "ERROR 404 Fish Not Found", type: "Power" , make: "Viking", length: 0, currentPrice: 400000.00)
-//        XCTAssertNil(zeroLenthItem)
-//    }
+//------ BoatItem Class Tests ------
+func testBoatItemInitSucceeds() {
+    let littleBoatItem = Boat.init( id: "1", data: ["name" : "Row Boat", "type" : "Power" , "make" : "Hinckley", "length": "8", "price" : "1199.99" ,"address" : "123 School Rd. Essex, CT","latitude": "42.234","longitude": "43.234", "photo" :"boatPics/CCSailboat.jpg"])
+    XCTAssertNotNil(littleBoatItem)
+    let bigBoatItem = Boat.init( id: "1", data: ["name" : "Island", "type" : "Power" , "make" : "SunSeeker", "length": "280", "price" : "6001199.99" ,"address" : "12 school St. New Haven, CT" , "latitude": "42.124","longitude": "41.234", "photo" :"boatPics/CCSailboat.jpg"])
+    XCTAssertNotNil(bigBoatItem)
+}
+   
+    func testBoatItemInitFails() {
+            // Item with no make
+        let noMakeItem = Boat.init(id: "1", data: ["name" : "Usain Boat", "type" : "Power" , "length": "40", "price" : "400000.99" ,"address" : "1123 High St. New Haven, CT" , "latitude": "42.124", "longitude": "41.234", "photo" :"boatPics/CCSailboat.jpg"])
+            XCTAssertNil(noMakeItem)
+        // Item with no photo
+        let noPhotoItem = Boat.init(id: "1", data: ["name" : "Island", "type" : "Power" , "make" : "SunSeeker", "length": "280", "price" : "6001199.99" ,"address" : "12 school St. New Haven, CT" , "latitude": "42.124","longitude": "41.234"])
+            XCTAssertNil(noPhotoItem)
+    }
 //    
 //    func testBoatItemPriceDifference(){
 //        let bigBoatItem = BoatItem.init(name: "Island", type: "Power" , make: "Sun Seeker", length: 230, currentPrice: 60000000.00)
