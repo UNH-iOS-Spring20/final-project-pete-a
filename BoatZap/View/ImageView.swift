@@ -11,7 +11,6 @@ import SwiftUI
 import SDWebImageSwiftUI
 import Firebase
 
-
 struct ImageView: View {
     
     @State var url = ""
