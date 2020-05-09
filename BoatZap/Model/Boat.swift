@@ -8,6 +8,7 @@
 import FirebaseFirestore
 
 class Boat : FirebaseCodable {
+    
     var id: String
     @Published var name: String
     @Published var type: String

@@ -12,7 +12,7 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var imageLinkENV = ImageLink()
+    //var imageLinkENV = ImageLink()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
 
         // Create the SwiftUI view that provides the window contents.
-        let appTabView = AppTabView().environmentObject(imageLinkENV)
+        let appTabView = AppTabView()//.environmentObject(imageLinkENV)
         
 
 

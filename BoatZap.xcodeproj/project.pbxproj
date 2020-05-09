@@ -25,7 +25,7 @@
 		0F71851D243434D200A077C9 /* BoatSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71851C243434D200A077C9 /* BoatSearchView.swift */; };
 		0F7185212434386000A077C9 /* BoatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185202434386000A077C9 /* BoatDetailView.swift */; };
 		0F7185252434422600A077C9 /* EditBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185242434422600A077C9 /* EditBoatView.swift */; };
-		0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
+		0F7A9DE4240B763C00D921BB /* NewUserSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* NewUserSignUpView.swift */; };
 		0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
 		0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE422240F585D0071C70D /* ProfileHost.swift */; };
 		0FBFE427240F58B50071C70D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE426240F58B50071C70D /* HomeView.swift */; };
@@ -46,13 +46,9 @@
 		0FF3C71B245E438C00BF103B /* BoatPicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */; };
 		0FF3C71E245E46C500BF103B /* BoatPicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C71D245E46C500BF103B /* BoatPicRow.swift */; };
 		0FF3C71F245E46C500BF103B /* BoatPicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C71D245E46C500BF103B /* BoatPicRow.swift */; };
-		0FF3C722245E4A3B00BF103B /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */; };
-		0FF3C723245E4A3B00BF103B /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */; };
 		0FF3C72B245E954B00BF103B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0FF3C72A245E954B00BF103B /* SDWebImageSwiftUI */; };
 		0FF3C72D245E976400BF103B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C72C245E976400BF103B /* ImageView.swift */; };
 		0FF3C72E245E976400BF103B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C72C245E976400BF103B /* ImageView.swift */; };
-		0FF3C731245F626100BF103B /* ImageLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C730245F626100BF103B /* ImageLink.swift */; };
-		0FF3C732245F626100BF103B /* ImageLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C730245F626100BF103B /* ImageLink.swift */; };
 		0FF3C735245FB6F200BF103B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C734245FB6F200BF103B /* CircleImage.swift */; };
 		0FF3C736245FB6F200BF103B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C734245FB6F200BF103B /* CircleImage.swift */; };
 		0FF3C739245FBD0800BF103B /* BoatRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C738245FBD0800BF103B /* BoatRowView.swift */; };
@@ -63,7 +59,7 @@
 		0FF3C7422462658700BF103B /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C7402462658600BF103B /* Variables.swift */; };
 		0FF3C77B2463AB7300BF103B /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A2150241F1E9800F608C5 /* Boat.swift */; };
 		0FF3C77C2463AB7700BF103B /* LocaionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5022445544500C43AE3 /* LocaionsManager.swift */; };
-		0FF3C77D2463AB8C00BF103B /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* UserInfoView.swift */; };
+		0FF3C77D2463AB8C00BF103B /* NewUserSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A9DE3240B763C00D921BB /* NewUserSignUpView.swift */; };
 		0FF3C77E2463AB9000BF103B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4645AF23FB03D900B765F3 /* ContentView.swift */; };
 		0FF3C77F2463AB9300BF103B /* BuyerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */; };
 		0FF3C7802463AB9700BF103B /* SellerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */; };
@@ -77,6 +73,8 @@
 		0FF3C7882463ABB100BF103B /* EditBoatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7185242434422600A077C9 /* EditBoatView.swift */; };
 		0FF3C7892463ABB400BF103B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F279B16243EB657001A409D /* MapView.swift */; };
 		0FF3C78A2463ABB700BF103B /* LocationDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */; };
+		0FF3C797246508CF00BF103B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C796246508CF00BF103B /* User.swift */; };
+		0FF3C798246508CF00BF103B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3C796246508CF00BF103B /* User.swift */; };
 		0FFDE5012442617100C43AE3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F279B16243EB657001A409D /* MapView.swift */; };
 		0FFDE5032445544500C43AE3 /* LocaionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5022445544500C43AE3 /* LocaionsManager.swift */; };
 		0FFDE5052445550200C43AE3 /* LocationDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */; };
@@ -128,7 +126,7 @@
 		0F71851C243434D200A077C9 /* BoatSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoatSearchView.swift; path = BoatZap/View/BoatSearchView.swift; sourceTree = SOURCE_ROOT; };
 		0F7185202434386000A077C9 /* BoatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoatDetailView.swift; path = BoatZap/View/BoatDetailView.swift; sourceTree = SOURCE_ROOT; };
 		0F7185242434422600A077C9 /* EditBoatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditBoatView.swift; path = BoatZap/View/EditBoatView.swift; sourceTree = SOURCE_ROOT; };
-		0F7A9DE3240B763C00D921BB /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoView.swift; path = BoatZap/View/UserInfoView.swift; sourceTree = SOURCE_ROOT; };
+		0F7A9DE3240B763C00D921BB /* NewUserSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewUserSignUpView.swift; path = BoatZap/View/NewUserSignUpView.swift; sourceTree = SOURCE_ROOT; };
 		0FBFE422240F585D0071C70D /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		0FBFE426240F58B50071C70D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = BoatZap/View/HomeView.swift; sourceTree = SOURCE_ROOT; };
 		0FBFE42A240F5A780071C70D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -140,13 +138,12 @@
 		0FF3C715245E3C0200BF103B /* BoatPics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatPics.swift; sourceTree = "<group>"; };
 		0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatPicDetailView.swift; sourceTree = "<group>"; };
 		0FF3C71D245E46C500BF103B /* BoatPicRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatPicRow.swift; sourceTree = "<group>"; };
-		0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImage.swift; sourceTree = "<group>"; };
 		0FF3C72C245E976400BF103B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		0FF3C730245F626100BF103B /* ImageLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLink.swift; sourceTree = "<group>"; };
 		0FF3C734245FB6F200BF103B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		0FF3C738245FBD0800BF103B /* BoatRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatRowView.swift; sourceTree = "<group>"; };
 		0FF3C73C2460CEA500BF103B /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		0FF3C7402462658600BF103B /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		0FF3C796246508CF00BF103B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FFDE5022445544500C43AE3 /* LocaionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaionsManager.swift; sourceTree = "<group>"; };
 		0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataTestView.swift; sourceTree = "<group>"; };
 		17980801E2FF72572297A204 /* Pods-BoatZap-BoatZapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoatZap-BoatZapUITests.release.xcconfig"; path = "Target Support Files/Pods-BoatZap-BoatZapUITests/Pods-BoatZap-BoatZapUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,8 +259,8 @@
 				0FFDE5022445544500C43AE3 /* LocaionsManager.swift */,
 				0FF3C711245A546700BF103B /* ImagePicker.swift */,
 				0FF3C715245E3C0200BF103B /* BoatPics.swift */,
-				0FF3C730245F626100BF103B /* ImageLink.swift */,
 				0FF3C7402462658600BF103B /* Variables.swift */,
+				0FF3C796246508CF00BF103B /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,28 +268,15 @@
 		0FB056CB241DD11800161E2F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0F7A9DE3240B763C00D921BB /* UserInfoView.swift */,
+				0FF3C7952464F97900BF103B /* LocationViews */,
+				0FF3C7942464F76500BF103B /* UserViews */,
+				0FF3C7932464F62100BF103B /* BoatViews */,
 				0F4645AF23FB03D900B765F3 /* ContentView.swift */,
-				0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */,
-				0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */,
-				0FBFE426240F58B50071C70D /* HomeView.swift */,
-				0F0A2152241F2C9F00F608C5 /* CreditView.swift */,
-				0F71850F242C641600A077C9 /* SignInView.swift */,
-				0F718511242C6EFD00A077C9 /* SetBoatLocationView.swift */,
-				0F7185182432E96700A077C9 /* AddBoatView.swift */,
-				0F71851C243434D200A077C9 /* BoatSearchView.swift */,
-				0F7185202434386000A077C9 /* BoatDetailView.swift */,
-				0F7185242434422600A077C9 /* EditBoatView.swift */,
-				0F279B16243EB657001A409D /* MapView.swift */,
-				0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */,
-				0FF3C70D244FE83700BF103B /* CustomSearch.swift */,
-				0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */,
-				0FF3C71D245E46C500BF103B /* BoatPicRow.swift */,
-				0FF3C721245E4A3B00BF103B /* FirebaseImage.swift */,
 				0FF3C72C245E976400BF103B /* ImageView.swift */,
 				0FF3C734245FB6F200BF103B /* CircleImage.swift */,
-				0FF3C738245FBD0800BF103B /* BoatRowView.swift */,
 				0FF3C73C2460CEA500BF103B /* AppTabView.swift */,
+				0F0A2152241F2C9F00F608C5 /* CreditView.swift */,
+				0FF3C7902464F4F300BF103B /* SearchBarNotImplemented */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +287,50 @@
 				0F7185152431A56200A077C9 /* FirebaseCollection.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FF3C7902464F4F300BF103B /* SearchBarNotImplemented */ = {
+			isa = PBXGroup;
+			children = (
+				0FBFE426240F58B50071C70D /* HomeView.swift */,
+				0FF3C70D244FE83700BF103B /* CustomSearch.swift */,
+			);
+			name = SearchBarNotImplemented;
+			sourceTree = "<group>";
+		};
+		0FF3C7932464F62100BF103B /* BoatViews */ = {
+			isa = PBXGroup;
+			children = (
+				0FF3C719245E438C00BF103B /* BoatPicDetailView.swift */,
+				0FF3C71D245E46C500BF103B /* BoatPicRow.swift */,
+				0F71851C243434D200A077C9 /* BoatSearchView.swift */,
+				0FF3C738245FBD0800BF103B /* BoatRowView.swift */,
+				0F7185242434422600A077C9 /* EditBoatView.swift */,
+				0F7185182432E96700A077C9 /* AddBoatView.swift */,
+				0F7185202434386000A077C9 /* BoatDetailView.swift */,
+			);
+			name = BoatViews;
+			sourceTree = "<group>";
+		};
+		0FF3C7942464F76500BF103B /* UserViews */ = {
+			isa = PBXGroup;
+			children = (
+				0FBFE4322410A6F40071C70D /* BuyerHomeView.swift */,
+				0FBFE42E2410A1DA0071C70D /* SellerHomeView.swift */,
+				0F71850F242C641600A077C9 /* SignInView.swift */,
+				0F7A9DE3240B763C00D921BB /* NewUserSignUpView.swift */,
+			);
+			name = UserViews;
+			sourceTree = "<group>";
+		};
+		0FF3C7952464F97900BF103B /* LocationViews */ = {
+			isa = PBXGroup;
+			children = (
+				0FFDE5042445550200C43AE3 /* LocationDataTestView.swift */,
+				0F718511242C6EFD00A077C9 /* SetBoatLocationView.swift */,
+				0F279B16243EB657001A409D /* MapView.swift */,
+			);
+			name = LocationViews;
 			sourceTree = "<group>";
 		};
 		52EBE38689442CBF4E07C33A /* Frameworks */ = {
@@ -617,12 +645,10 @@
 				0F4645AE23FB03D900B765F3 /* SceneDelegate.swift in Sources */,
 				0F718512242C6EFD00A077C9 /* SetBoatLocationView.swift in Sources */,
 				0FBFE423240F585D0071C70D /* ProfileHost.swift in Sources */,
-				0FF3C731245F626100BF103B /* ImageLink.swift in Sources */,
-				0F7A9DE4240B763C00D921BB /* UserInfoView.swift in Sources */,
+				0F7A9DE4240B763C00D921BB /* NewUserSignUpView.swift in Sources */,
 				0FF3C71A245E438C00BF103B /* BoatPicDetailView.swift in Sources */,
 				0FF3C739245FBD0800BF103B /* BoatRowView.swift in Sources */,
 				0F7185162431A56200A077C9 /* FirebaseCollection.swift in Sources */,
-				0FF3C722245E4A3B00BF103B /* FirebaseImage.swift in Sources */,
 				0F7185252434422600A077C9 /* EditBoatView.swift in Sources */,
 				0F0A2153241F2C9F00F608C5 /* CreditView.swift in Sources */,
 				0F718510242C641600A077C9 /* SignInView.swift in Sources */,
@@ -645,6 +671,7 @@
 				0FFDE5032445544500C43AE3 /* LocaionsManager.swift in Sources */,
 				0FF3C73D2460CEA500BF103B /* AppTabView.swift in Sources */,
 				0FF3C735245FB6F200BF103B /* CircleImage.swift in Sources */,
+				0FF3C797246508CF00BF103B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,18 +683,17 @@
 				0FF3C7822463AB9C00BF103B /* CreditView.swift in Sources */,
 				0F7185172431A56200A077C9 /* FirebaseCollection.swift in Sources */,
 				0FF3C78A2463ABB700BF103B /* LocationDataTestView.swift in Sources */,
+				0FF3C798246508CF00BF103B /* User.swift in Sources */,
 				0FBFE42C240F5A780071C70D /* Profile.swift in Sources */,
 				0FF3C7852463ABA600BF103B /* AddBoatView.swift in Sources */,
 				0FF3C71B245E438C00BF103B /* BoatPicDetailView.swift in Sources */,
 				0FF3C7422462658700BF103B /* Variables.swift in Sources */,
 				0FF3C736245FB6F200BF103B /* CircleImage.swift in Sources */,
-				0FF3C732245F626100BF103B /* ImageLink.swift in Sources */,
 				0FF3C77E2463AB9000BF103B /* ContentView.swift in Sources */,
 				0FF3C7892463ABB400BF103B /* MapView.swift in Sources */,
 				0FF3C7832463AB9F00BF103B /* SignInView.swift in Sources */,
 				0FF3C7872463ABAD00BF103B /* BoatDetailView.swift in Sources */,
 				0FF3C7882463ABB100BF103B /* EditBoatView.swift in Sources */,
-				0FF3C723245E4A3B00BF103B /* FirebaseImage.swift in Sources */,
 				0FF3C72E245E976400BF103B /* ImageView.swift in Sources */,
 				0FF3C70F244FE83700BF103B /* CustomSearch.swift in Sources */,
 				0FF3C7862463ABAA00BF103B /* BoatSearchView.swift in Sources */,
@@ -681,7 +707,7 @@
 				0FBFE424240F585D0071C70D /* ProfileHost.swift in Sources */,
 				0F4645C323FB03DA00B765F3 /* BoatZapTests.swift in Sources */,
 				0FF3C717245E3C0200BF103B /* BoatPics.swift in Sources */,
-				0FF3C77D2463AB8C00BF103B /* UserInfoView.swift in Sources */,
+				0FF3C77D2463AB8C00BF103B /* NewUserSignUpView.swift in Sources */,
 				0FF3C7812463AB9900BF103B /* HomeView.swift in Sources */,
 				0FF3C71F245E46C500BF103B /* BoatPicRow.swift in Sources */,
 			);

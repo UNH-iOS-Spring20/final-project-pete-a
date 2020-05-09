@@ -3,12 +3,10 @@
 //  BoatZap
 //
 //  Created on 4/13/20.
-//  Most of this code is from
 //  https://stackoverflow.com/questions/57681885/how-to-get-current-location-using-swiftui-without-viewcontrollers
 //  Copyright © 2020 Peter Aurigemma. All rights reserved.
 //
 
-import Foundation
 import CoreLocation
 import Combine
 
@@ -40,14 +38,13 @@ class LocationManager: NSObject, ObservableObject {
         }
 
         switch status {
-        case .notDetermined: return "notDetermined"
-        case .authorizedWhenInUse: return "authorizedWhenInUse"
-        case .authorizedAlways: return "authorizedAlways"
-        case .restricted: return "restricted"
-        case .denied: return "denied"
-        default: return "unknown"
+            case .notDetermined: return "notDetermined"
+            case .authorizedWhenInUse: return "authorizedWhenInUse"
+            case .authorizedAlways: return "authorizedAlways"
+            case .restricted: return "restricted"
+            case .denied: return "denied"
+            default: return "unknown"
         }
-
     }
 
     let objectWillChange = PassthroughSubject<Void, Never>()

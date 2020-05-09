@@ -11,7 +11,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 import Firebase
 
-class BoatPics: ObservableObject,FirebaseCodable {
+class BoatPics: ObservableObject, FirebaseCodable {
     
     var id: String
     @Published var url: String
