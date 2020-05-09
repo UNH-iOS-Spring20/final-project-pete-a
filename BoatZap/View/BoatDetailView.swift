@@ -29,15 +29,21 @@ struct BoatDetailView: View {
         
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
-            VStack(alignment: .leading) {
-                Group{
-                    Text("Boat Detail")
-                        .font(.largeTitle)
-                        .foregroundColor(Color.blue)
-                    Text("Name: " + boat.name)
-                        .foregroundColor(Color.blue)
-                        .font(.headline)
-                        .padding(5)
+            VStack {
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack {
+                        ForEach(pics.items) { boatPic in
+                            NavigationLink(destination: BoatPicDetailView(boatPic: boatPic, boat: self.boat)) {
+                                BoatPicRow(boatPic: boatPic)
+                            }
+                            .frame( height: 100)
+                        }
+                    }.frame(minWidth: 0, maxWidth: .infinity)
+                }
+                Text(boat.name)
+                    .font(.largeTitle)
+                    .foregroundColor(Color.blue)
+                VStack(alignment: .leading){
                     Text("Type: " + boat.type)
                         .foregroundColor(Color.blue)
                         .font(.headline)
@@ -100,9 +106,9 @@ struct BoatDetailView: View {
                     }) {
                         HStack{
                             Image(systemName: "icloud.and.arrow.up")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                        Text("Upload Image")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            Text("Upload Image")
                         }
                     }.sheet(isPresented:$shown) {
                         imagePicker(boat: self.boat, boatPicCollectionRef: self.boatPicCollectionRef,  shown: self.$shown)
@@ -117,9 +123,9 @@ struct BoatDetailView: View {
                     NavigationLink(destination: SetBoatLocationView(boat: boat)) {
                         HStack{
                             Image("big-anchor")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                        Text("Update Boat Location")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            Text("Update Boat Location")
                         }
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
@@ -129,17 +135,10 @@ struct BoatDetailView: View {
                     .background(Color.blue)
                     .cornerRadius(15)
                     
-                    List {
-                        ForEach(pics.items) { boatPic in
-                            NavigationLink(destination: BoatPicDetailView(boatPic: boatPic, boat: self.boat)) {
-                                BoatPicRow(boatPic: boatPic)
-                            }
-                        .frame( height: 100)
-                        //.fixedSize(horizontal: 30, vertical: 30 )
-                        }
-                    }
                 }
-            }.frame(width: 400, height: 800, alignment: .topLeading)
+            }
+            .offset(y: -60)
+        .padding()
         }
     }
     func oldPriceCopy() { // Deep copy the old price to a separate structure so we can compare old price and new price.
