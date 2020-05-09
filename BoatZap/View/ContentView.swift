@@ -10,27 +10,48 @@ import SwiftUI
 import Firebase
 
 let boatsCollectionRef = Firestore.firestore().collection("boats")
+let usersCollectionRef = Firestore.firestore().collection("users")
 
 struct ContentView: View {
     
-    @EnvironmentObject var  imageLinkENV: ImageLink
-    @State var photoLink = ""
+    //@EnvironmentObject var  imageLinkENV: ImageLink
+   // @State var photoLink = ""
     
     var body: some View {
         NavigationView {
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all)
                 
-                VStack( spacing: 5) {
-                    VStack ( spacing: 30){
+                VStack {
+                    VStack {
+                        HStack{
+                            NavigationLink(destination: SignInView()) {
+                                Text("Sign in")
+                            }
+                            .foregroundColor(Color.blue)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .multilineTextAlignment(.leading)
+                            Spacer()
+                            NavigationLink(destination: NewUserSignUpView()) {
+                                Text("Sign up")
+                            }
+                            .foregroundColor(Color.blue)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .multilineTextAlignment(.trailing)
+                        }
+                      
+                        Spacer()
                         
                         
-                        Text("BoatZap Navagator")
+                        Text("BoatZap Navigator")
                             .font(.largeTitle)
                             .foregroundColor(Color.blue)
+                        Spacer()
                         CircleImage(image: Image("FrontPageBoat"))
                         Divider()
+                        Spacer()
                     }
+                    
                     NavigationLink(destination: AddBoatView()) {
                         HStack{
                             Image(systemName: "plus.rectangle.fill")
@@ -45,6 +66,7 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
+                    
                     
                     NavigationLink(destination: BoatSearchView()) {
                         HStack{
@@ -75,7 +97,10 @@ struct ContentView: View {
                     .padding(10)
                     .background(Color.blue)
                     .cornerRadius(15)
-                }  
+                    Spacer()
+                }
+            .padding()
+            
             }
         }
     }
