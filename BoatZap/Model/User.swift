@@ -1,21 +1,53 @@
 //
 //  User.swift
-//  BoatZap
+//  UserZap
 //
 //  Created by Peter Aurigemma on 5/7/20.
 //  Copyright © 2020 Peter Aurigemma. All rights reserved.
 //
 
-import SwiftUI
+import FirebaseFirestore
 
-struct User: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class User : FirebaseCodable {
+    
+    var id: String
+    @Published var firstName: String
+    @Published var lastName: String
+    @Published var email: String
+    @Published var password: String
+   
+    
+    var data: [String: Any] {
+        return [
+            "firstName": firstName,
+            "lastName": lastName,
+            "email": email,
+            "password": password,
+        ]
     }
-}
-
-struct User_Previews: PreviewProvider {
-    static var previews: some View {
-        User()
+    
+    required init?(id: String, data: [String : Any]) {
+        guard let firstName = data["firstName"] as? String,
+            let lastName = data["lastName"] as? String,
+            let email = data["email"] as? String,
+            let password = data["password"] as? String
+            else {
+                return nil
+        }
+        
+        self.id = id
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+        self.password = password
+        
     }
+    
+    #if DEBUG
+    static let example = User(id: "1", data: ["firstName": "First Name",
+                                              "lastName": "lastName",
+                                              "email": "email",
+                                              "password": "password",
+                                            ])!
+    #endif
 }

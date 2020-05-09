@@ -7,10 +7,12 @@
 //
 
 import SwiftUI
-import FirebaseFirestore
 import Firebase
+//import FirebaseUI
+import UIKit
 
-struct UserInfoView: View {
+struct NewUserSignUpView: View {
+    @Environment(\.presentationMode) var presentationMode
     
     @State private var firstName: String = ""
     @State private var lastName: String = ""
@@ -20,60 +22,89 @@ struct UserInfoView: View {
     
     var body: some View {
         
-        Form {
-            Text("New User Sign up")
+        VStack {
+            Text("Sign up")
                 .font(.largeTitle)
                 .foregroundColor(Color.blue)
-
+            
             VStack(alignment: .leading) {
-                Text("First Name :")
-                    .font(.headline)
-                TextField("Enter First Name", text: $firstName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                Text("Last Name :")
-                    .font(.headline)
-                TextField("Enter Last Name", text: $lastName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                Text("Email :")
-                    .font(.headline)
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                Text("Password :")
-                    .font(.headline)
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                Text("Retype Password :")
-                    .font(.headline)
-                SecureField("Password", text: $passwordVer)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-            }
-                .padding(.horizontal, 5)
-            Button(action: {
-                
-                //addUser(firstName: self.firstName, lastName: self.lastName, email: self.email, password: self.password)
-                
-                if (self.password == self.passwordVer) {
-                    print(" password1 = ",self.password)
-                    print(" password2 = ",self.passwordVer)
-                    Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
-                        
-                    }
-                    print("user was added")
+                Group{
+                    Text("First Name :")
+                        .font(.headline)
+                    
+                    TextField("Enter First Name", text: $firstName)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    Text("Last Name :")
+                        .font(.headline)
+                    
+                    TextField("Enter Last Name", text: $lastName)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    Text("Email :")
+                        .font(.headline)
+                    
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    Text("Password :")
+                        .font(.headline)
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    Text("Retype Password :")
+                        .font(.headline)
+                    SecureField("Password", text: $passwordVer)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
+                Button (action: {
+                    self.addUser()
                 }) {
-                Text("Save")
-            }
+                    Text("Save")
+                }
+                .frame(minWidth: 0, maxWidth: .infinity)
+                    
                 .foregroundColor(Color.black)
                 .multilineTextAlignment(.center)
                 .padding(15)
                 .background(Color.blue)
                 .cornerRadius(15)
+            }
+            .padding()
+            Spacer()
         }
+        
+    }
+    
+    func addUser() {
+        let data = [
+            "firstName": firstName,
+            "lastName": lastName,
+            "email": email,
+            "password": password,
+        ]
+        if !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty && !password.isEmpty && !passwordVer.isEmpty {
+        }
+        if (self.password == self.passwordVer) {
+            print(" password1 = ",self.password)
+            print(" password2 = ",self.passwordVer)
+            Auth.auth().createUser(withEmail: self.email, password: self.password) { authResult, error in
+            }
+            print("------ reference ------- ")
+            guard let userID = Auth.auth().currentUser?.uid else { return }
+            print(userID)
+            usersCollectionRef.addDocument(data: data)
+            print("user was added")
+            dismiss()
+        }else {
+            print("some problems")
+        }
+    }
+    func dismiss() {
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
-struct USerInfoView_Previews: PreviewProvider {
+struct NewUserSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        UserInfoView()
+        NewUserSignUpView()
     }
 }
