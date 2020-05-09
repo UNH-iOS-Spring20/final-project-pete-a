@@ -14,7 +14,6 @@ class User : FirebaseCodable {
     @Published var firstName: String
     @Published var lastName: String
     @Published var email: String
-    @Published var password: String
    
     
     var data: [String: Any] {
@@ -22,15 +21,13 @@ class User : FirebaseCodable {
             "firstName": firstName,
             "lastName": lastName,
             "email": email,
-            "password": password,
         ]
     }
     
     required init?(id: String, data: [String : Any]) {
         guard let firstName = data["firstName"] as? String,
             let lastName = data["lastName"] as? String,
-            let email = data["email"] as? String,
-            let password = data["password"] as? String
+            let email = data["email"] as? String
             else {
                 return nil
         }
@@ -39,15 +36,13 @@ class User : FirebaseCodable {
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
-        self.password = password
         
     }
     
     #if DEBUG
     static let example = User(id: "1", data: ["firstName": "First Name",
                                               "lastName": "lastName",
-                                              "email": "email",
-                                              "password": "password",
+                                              "email": "email"
                                             ])!
     #endif
 }

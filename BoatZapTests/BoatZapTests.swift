@@ -35,6 +35,7 @@ class BoatZapTests: XCTestCase {
         let noPhotoItem = Boat.init(id: "1", data: ["name" : "Island", "type" : "Power" , "make" : "SunSeeker", "length": "280", "price" : "6001199.99" ,"address" : "12 school St. New Haven, CT" , "latitude": "42.124","longitude": "41.234"])
         XCTAssertNil(noPhotoItem)
     }
+    
     //------ BoatPic tests
     func testPicInitSucceeds() {
         let testPic = BoatPics.init(id: "123456789010", data: ["url" : "boatPics/CCSailboat.jpg"])
@@ -44,14 +45,21 @@ class BoatZapTests: XCTestCase {
         let testPicExtraItem = BoatPics.init(id: "123456789010", data: ["notAURL" : "boatPics/CCSailboat.jpg"])
         XCTAssertNil(testPicExtraItem)
     }
+
+    //------ User tests
+    func testUserInitSucceeds() {
+        let testUser = User.init(id: "123456789010", data: ["firstName": "First Name", "lastName": "lastName", "email": "email"])
+        XCTAssertNotNil(testUser)
+    }
+    func testUserInitFails() {
+        let testUserFail = User.init(id: "123456789010", data: ["firstName": "First Name", "lastName": "lastName"])
+        XCTAssertNil(testUserFail)
+    }
     
-    
-    
-    //    func testBoatItemPriceDifference(){
-    //          let littleBoatItem = Boat.init( id: "1", data: ["name" : "Row Boat", "type" : "Power" , "make" : "Hinckley", "length": "8", "price" : "1199.99" ,"address" : "123 School Rd. Essex, CT","latitude": "42.234","longitude": "43.234", "photo" :"boatPics/CCSailboat.jpg"])
-    //        try! EditBoatView.updateBoat(
-    
-    
+//    func testPicInitFails() {
+//        let testPicExtraItem = BoatPics.init(id: "123456789010", data: ["firstName": "First Name", "lastName": "lastName", "email": "email", "password": "password",])
+//        XCTAssertNil(testPicExtraItem)
+//    }
     //        let bigBoatItem = BoatItem.init(name: "Island", type: "Power" , make: "Sun Seeker", length: 230, currentPrice: 60000000.00)
     //        bigBoatItem!.startingPrice = 61000000.00
     //        var total: Double

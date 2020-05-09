@@ -79,7 +79,6 @@ struct NewUserSignUpView: View {
             "firstName": firstName,
             "lastName": lastName,
             "email": email,
-            "password": password,
         ]
         if !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty && !password.isEmpty && !passwordVer.isEmpty {
         }
