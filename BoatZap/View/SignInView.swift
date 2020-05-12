@@ -12,6 +12,8 @@ import SwiftUI
 
 struct SignInView: View {
     
+    // This View is to be implemented
+    
 // FirebaseApp.configure()
 //    let authUI = FUIAuth.defaultAuthUI()
 //    // You need to adopt a FUIAuthDelegate protocol to receive callback

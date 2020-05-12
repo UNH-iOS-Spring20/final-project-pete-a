@@ -14,9 +14,6 @@ let usersCollectionRef = Firestore.firestore().collection("users")
 
 struct ContentView: View {
     
-    //@EnvironmentObject var  imageLinkENV: ImageLink
-   // @State var photoLink = ""
-    
     var body: some View {
         NavigationView {
             ZStack {
