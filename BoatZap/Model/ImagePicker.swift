@@ -54,7 +54,6 @@ struct imagePicker : UIViewControllerRepresentable {
     }
     
     class Coordinator : NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-       // @EnvironmentObject var  imageLinkENV: ImageLink
         var parent : imagePicker!
         
         init (parent1 : imagePicker ) {

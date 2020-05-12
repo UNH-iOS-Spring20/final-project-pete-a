@@ -56,29 +56,6 @@ class BoatZapTests: XCTestCase {
         XCTAssertNil(testUserFail)
     }
     
-//    func testPicInitFails() {
-//        let testPicExtraItem = BoatPics.init(id: "123456789010", data: ["firstName": "First Name", "lastName": "lastName", "email": "email", "password": "password",])
-//        XCTAssertNil(testPicExtraItem)
-//    }
-    //        let bigBoatItem = BoatItem.init(name: "Island", type: "Power" , make: "Sun Seeker", length: 230, currentPrice: 60000000.00)
-    //        bigBoatItem!.startingPrice = 61000000.00
-    //        var total: Double
-    //        total  = bigBoatItem!.returnPriceDifference(BoatItem: bigBoatItem!)
-    //        XCTAssertEqual(-1000000.00, total)
-    //    }
-    //    //------ BoatListing Class Tests -----
-    //    func testBoatListingAddItem() {
-    //        let oneBoatItem = BoatItem.init(name: "Row Boat1", type: "Power" , make: "Hinckley", length: 8, currentPrice: 1199.99)
-    //        let twoBoatItem = BoatItem.init(name: "Row Boat2", type: "Power" , make: "Hinckley", length: 8, currentPrice: 1199.99)
-    //        let boatList = BoatListings.init()
-    //        XCTAssertEqual(0, boatList.boats.count)
-    //        boatList.addBoat(item: oneBoatItem!)
-    //        XCTAssertEqual(1, boatList.boats.count)
-    //        boatList.addBoat(item: twoBoatItem!)
-    //        XCTAssertEqual(2, boatList.boats.count)
-    //        //XCTAsser
-    //    }
-    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

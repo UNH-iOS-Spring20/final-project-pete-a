@@ -61,6 +61,7 @@ class Boat : FirebaseCodable {
         self.photo = photo
     }
     
+    
     #if DEBUG
     static let example = Boat(id: "1", data: ["name": "Test Boat Name",
                                               "type": "Sailboat",

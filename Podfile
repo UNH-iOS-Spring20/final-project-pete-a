@@ -7,29 +7,16 @@ target 'BoatZap' do
 
   # Pods for BoatZap
   pod 'FirebaseUI'
-  #pod 'Firebase'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
-  #pod 'Firebase/Analytics'
-  #pod 'Firebase/Database'
   pod 'Firebase/Firestore'
-  #pod 'Firebase/Core'
-  #pod 'FirebaseUI'
   pod 'SDWebImage'
   
   #pod 'GoogleSignIn'
-  #pod 'FirebaseUI/Auth'
-
   #pod 'FirebaseUI/Google'
   #pod 'FirebaseUI/Facebook'
-  #pod 'FirebaseUI/OAuth' # Used for Sign in with Apple, Twitter, etc
-  #pod 'FirebaseUI/Phone'
-  
-  
-  #pod 'FBSDKCoreKit/Swift'
-  #pod 'FBSDKLoginKit/Swift'
-  #pod 'FBSDKShareKit/Swift'
+
 
   target 'BoatZapTests' do
     inherit! :search_paths
