@@ -23,7 +23,7 @@ struct ContentView: View {
                     VStack {
                         HStack{
                             NavigationLink(destination: SignInView()) {
-                                Text("Sign in")
+                                Text(/*"Sign in"*/"")
                             }
                             .foregroundColor(Color.blue)
                             .frame(minWidth: 0, maxWidth: .infinity)
